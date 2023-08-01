@@ -22,7 +22,7 @@ $ = {
             return {
                 "startedDateTime": $.request.loggedDateString,
                 "id": $.id,
-                "title": $.stubMapping.id,
+                "title": $.stubMapping.name ?? $.stubMapping.id,
                 "pageTimings": {},
                 "comment": ""
             }
@@ -44,7 +44,13 @@ $ = {
                             "comment": ""
                     }
                     }),
-                    "queryString": [],
+                    "queryString": Object.entries($.request.queryParams).map(([key, value]) => {
+                        return {
+                            "name": key,
+                            "value": value.values.join(','),
+                            "comment": ""
+                    }
+                    }),
                     "postData": {
                         "mimeType": $.request.headers['Content-Type'] ?? "plain/text",
                         "text": $.request.body, //bodyAsBase64,
@@ -68,7 +74,7 @@ $ = {
                         //"text": $.response.bodyAsBase64,
                         "text": $.response.body,
                         "encoding": "text", //"base64",
-                        "comment": ""
+                        "comment": $.response.bodyFileName ?? $.stubMapping.name ?? $.stubMapping.id ??  ""
                     },
                     "redirectURL": "",
                     "headersSize": 0,
@@ -81,7 +87,7 @@ $ = {
                     send: 0,
                     receive: 0
                 },
-                "serverIPAddress": "10.0.0.1",
+                "serverIPAddress": $.request.clientIp,
                 "connection": "",
                 "comment": ""
             }

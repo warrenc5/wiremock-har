@@ -1,603 +1,607 @@
 {
-  "requests" : [ {
-    "id" : "8ca6e2e8-5f6d-4cc5-9a5b-30e6d0f30360",
-    "request" : {
-      "url" : "/ocs",
-      "absoluteUrl" : "http://responder:8099/ocs",
-      "method" : "POST",
-      "clientIp" : "172.24.0.6",
-      "headers" : {
-        "Host" : "responder:8099",
-        "Accept-Encoding" : "identity",
-        "Content-Length" : "639",
-        "X-Key" : "KafkaResourceAdaptor MySession_2_1690851660680_HAPPY",
-        "Accept" : "application/json",
-        "X-ChargingContextId" : "sms-sc",
-        "X-RequestId" : "1",
-        "X-SubscriberId" : "123456789",
-        "Content-Type" : "application/json",
-        "X-SessionId" : "123456789"
-      },
-      "cookies" : { },
-      "browserProxyRequest" : false,
-      "loggedDate" : 1690851661419,
-      "bodyAsBase64" : "eyJ0cmFmZmljVHlwZVJlcXVlc3QiOiB7InJvYW1pbmdQb3NpdGlvbiI6ICJWUExNTiIsICJzZXJ2aWNlU2NlbmFyaW8iOiAiTU8ifSwgImhlYWRlciI6IHsiY2hhcmdpbmdDb250ZXh0SWQiOiAic21zLXNjIiwgInN1YnNjcmliZXJJZCI6ICIxMjM0NTY3ODkiLCAicmVxdWVzdElkIjogIjEifSwgInNlcnZpY2VSZXF1ZXN0IjogeyJzZXJ2aWNlSWRlbnRpZmllciI6ICJzbXMucmVzdGNvbW0ub3JnIiwgImNoYXJnaW5nU2Vzc2lvbklkIjogIk15U2Vzc2lvbl8yXzE2OTA4NTE2NjA2ODBfSEFQUFkiLCAib3BlcmF0aW9uVHlwZSI6ICJvcEZpbmFsIn0sICJzZXJ2aWNlSW5mb3JtYXRpb24iOiB7Im1zY0FkZHJlc3MiOiAibXNjIiwgInNlcnZpY2VLZXkiOiAxLCAic3RhcnRUaW1lU3RhbXAiOiAwLCAiY2FsbGluZ01zaXNkbiI6ICIxMjM0IiwgIm9yaWdpbmFsQ2FsbGVkUGFydHkiOiAiY2FsbGVkIiwgInZsckFkZHJlc3MiOiAiQGhlcmUiLCAibG9jYXRpb25JbmZvcm1hdGlvbiI6IHsibW5jIjogMSwgIm1jYyI6IDEsICJjZWxsSWQiOiAxLCAibGFjIjogMX0sICJpbXNpIjogInNvbWVudW1iZXIifSwgInF1b3RhUmVxdWVzdCI6IHsicmVxdWVzdGVkVW5pdHMiOiA5LCAidXNlZFVuaXRzIjogMCwgInJhdGluZ0dyb3VwIjogMH19",
-      "body" : "{\"trafficTypeRequest\": {\"roamingPosition\": \"VPLMN\", \"serviceScenario\": \"MO\"}, \"header\": {\"chargingContextId\": \"sms-sc\", \"subscriberId\": \"123456789\", \"requestId\": \"1\"}, \"serviceRequest\": {\"serviceIdentifier\": \"sms.restcomm.org\", \"chargingSessionId\": \"MySession_2_1690851660680_HAPPY\", \"operationType\": \"opFinal\"}, \"serviceInformation\": {\"mscAddress\": \"msc\", \"serviceKey\": 1, \"startTimeStamp\": 0, \"callingMsisdn\": \"1234\", \"originalCalledParty\": \"called\", \"vlrAddress\": \"@here\", \"locationInformation\": {\"mnc\": 1, \"mcc\": 1, \"cellId\": 1, \"lac\": 1}, \"imsi\": \"somenumber\"}, \"quotaRequest\": {\"requestedUnits\": 9, \"usedUnits\": 0, \"ratingGroup\": 0}}",
-      "protocol" : "HTTP/1.1",
-      "scheme" : "http",
-      "host" : "responder",
-      "port" : 8099,
-      "loggedDateString" : "2023-08-01T01:01:01Z",
-      "queryParams" : { }
-    },
-    "responseDefinition" : {
-      "status" : 200,
-      "body" : "{\n   \"header\" : {\n      \"chargingContextId\" : \"sms-sc\",\n      \"requestId\" : \"1\",\n      \"subscriberId\" : \"123456789\"\n   },\n   \"serviceResult\" : {\n      \"responseCode\" : \"SUCCESS\",\n      \"chargingSessionId\": \"MySession_2_1690851660680_HAPPY\"\n   },\n   \"serviceInformation\" : {\n      \"any\" : {}\n   },\n   \"quotaResult\" : {\n      \"responseCode\" : \"SUCCESS\",\n      \"ratingGroup\" : 200\n   }\n}\n",
-      "bodyFileName" : "resp_sms_opFin-with-credit.json",
-      "headers" : {
-        "Content-Type" : "application/json"
-      }
-    },
-    "response" : {
-      "status" : 200,
-      "headers" : {
-        "Content-Type" : "application/json",
-        "Matched-Stub-Id" : "33de7d53-8300-41d7-920c-cc31a397358a"
-      },
-      "bodyAsBase64" : "ewogICAiaGVhZGVyIiA6IHsKICAgICAgImNoYXJnaW5nQ29udGV4dElkIiA6ICJzbXMtc2MiLAogICAgICAicmVxdWVzdElkIiA6ICIxIiwKICAgICAgInN1YnNjcmliZXJJZCIgOiAiMTIzNDU2Nzg5IgogICB9LAogICAic2VydmljZVJlc3VsdCIgOiB7CiAgICAgICJyZXNwb25zZUNvZGUiIDogIlNVQ0NFU1MiLAogICAgICAiY2hhcmdpbmdTZXNzaW9uSWQiOiAiTXlTZXNzaW9uXzJfMTY5MDg1MTY2MDY4MF9IQVBQWSIKICAgfSwKICAgInNlcnZpY2VJbmZvcm1hdGlvbiIgOiB7CiAgICAgICJhbnkiIDoge30KICAgfSwKICAgInF1b3RhUmVzdWx0IiA6IHsKICAgICAgInJlc3BvbnNlQ29kZSIgOiAiU1VDQ0VTUyIsCiAgICAgICJyYXRpbmdHcm91cCIgOiAyMDAKICAgfQp9Cg==",
-      "body" : "{\n   \"header\" : {\n      \"chargingContextId\" : \"sms-sc\",\n      \"requestId\" : \"1\",\n      \"subscriberId\" : \"123456789\"\n   },\n   \"serviceResult\" : {\n      \"responseCode\" : \"SUCCESS\",\n      \"chargingSessionId\": \"MySession_2_1690851660680_HAPPY\"\n   },\n   \"serviceInformation\" : {\n      \"any\" : {}\n   },\n   \"quotaResult\" : {\n      \"responseCode\" : \"SUCCESS\",\n      \"ratingGroup\" : 200\n   }\n}\n"
-    },
-    "wasMatched" : true,
-    "timing" : {
-      "addedDelay" : 0,
-      "processTime" : 2,
-      "responseSendTime" : 0,
-      "serveTime" : 2,
-      "totalTime" : 2
-    },
-    "stubMapping" : {
-      "id" : "33de7d53-8300-41d7-920c-cc31a397358a",
-      "request" : {
-        "urlPathPattern" : "/.*",
-        "method" : "POST",
-        "headers" : {
-          "X-RequestId" : {
-            "equalTo" : "1"
-          }
-        },
-        "bodyPatterns" : [ {
-          "matchesJsonPath" : "$.serviceRequest[?(@.operationType == 'opFinal' && @.serviceIdentifier == 'sms.restcomm.org') ]"
-        } ]
-      },
-      "response" : {
-        "status" : 200,
-        "bodyFileName" : "resp_sms_opFin-with-credit.json",
-        "headers" : {
-          "Content-Type" : "application/json"
-        }
-      },
-      "uuid" : "33de7d53-8300-41d7-920c-cc31a397358a"
-    }
-  }, {
-    "id" : "b8931c3d-0aa9-4846-8367-b572ce47772d",
-    "request" : {
-      "url" : "/ocs",
-      "absoluteUrl" : "http://responder:8099/ocs",
-      "method" : "POST",
-      "clientIp" : "172.24.0.6",
-      "headers" : {
-        "Host" : "responder:8099",
-        "Accept-Encoding" : "identity",
-        "Content-Length" : "639",
-        "X-Key" : "KafkaResourceAdaptor MySession_1_1690851660624_HAPPY",
-        "Accept" : "application/json",
-        "X-ChargingContextId" : "sms-sc",
-        "X-RequestId" : "1",
-        "X-SubscriberId" : "123456789",
-        "Content-Type" : "application/json",
-        "X-SessionId" : "123456789"
-      },
-      "cookies" : { },
-      "browserProxyRequest" : false,
-      "loggedDate" : 1690851661259,
-      "bodyAsBase64" : "eyJ0cmFmZmljVHlwZVJlcXVlc3QiOiB7InJvYW1pbmdQb3NpdGlvbiI6ICJWUExNTiIsICJzZXJ2aWNlU2NlbmFyaW8iOiAiTU8ifSwgImhlYWRlciI6IHsiY2hhcmdpbmdDb250ZXh0SWQiOiAic21zLXNjIiwgInN1YnNjcmliZXJJZCI6ICIxMjM0NTY3ODkiLCAicmVxdWVzdElkIjogIjEifSwgInNlcnZpY2VSZXF1ZXN0IjogeyJzZXJ2aWNlSWRlbnRpZmllciI6ICJzbXMucmVzdGNvbW0ub3JnIiwgImNoYXJnaW5nU2Vzc2lvbklkIjogIk15U2Vzc2lvbl8xXzE2OTA4NTE2NjA2MjRfSEFQUFkiLCAib3BlcmF0aW9uVHlwZSI6ICJvcEZpbmFsIn0sICJzZXJ2aWNlSW5mb3JtYXRpb24iOiB7Im1zY0FkZHJlc3MiOiAibXNjIiwgInNlcnZpY2VLZXkiOiAxLCAic3RhcnRUaW1lU3RhbXAiOiAwLCAiY2FsbGluZ01zaXNkbiI6ICIxMjM0IiwgIm9yaWdpbmFsQ2FsbGVkUGFydHkiOiAiY2FsbGVkIiwgInZsckFkZHJlc3MiOiAiQGhlcmUiLCAibG9jYXRpb25JbmZvcm1hdGlvbiI6IHsibW5jIjogMSwgIm1jYyI6IDEsICJjZWxsSWQiOiAxLCAibGFjIjogMX0sICJpbXNpIjogInNvbWVudW1iZXIifSwgInF1b3RhUmVxdWVzdCI6IHsicmVxdWVzdGVkVW5pdHMiOiA5LCAidXNlZFVuaXRzIjogMCwgInJhdGluZ0dyb3VwIjogMH19",
-      "body" : "{\"trafficTypeRequest\": {\"roamingPosition\": \"VPLMN\", \"serviceScenario\": \"MO\"}, \"header\": {\"chargingContextId\": \"sms-sc\", \"subscriberId\": \"123456789\", \"requestId\": \"1\"}, \"serviceRequest\": {\"serviceIdentifier\": \"sms.restcomm.org\", \"chargingSessionId\": \"MySession_1_1690851660624_HAPPY\", \"operationType\": \"opFinal\"}, \"serviceInformation\": {\"mscAddress\": \"msc\", \"serviceKey\": 1, \"startTimeStamp\": 0, \"callingMsisdn\": \"1234\", \"originalCalledParty\": \"called\", \"vlrAddress\": \"@here\", \"locationInformation\": {\"mnc\": 1, \"mcc\": 1, \"cellId\": 1, \"lac\": 1}, \"imsi\": \"somenumber\"}, \"quotaRequest\": {\"requestedUnits\": 9, \"usedUnits\": 0, \"ratingGroup\": 0}}",
-      "protocol" : "HTTP/1.1",
-      "scheme" : "http",
-      "host" : "responder",
-      "port" : 8099,
-      "loggedDateString" : "2023-08-01T01:01:01Z",
-      "queryParams" : { }
-    },
-    "responseDefinition" : {
-      "status" : 200,
-      "body" : "{\n   \"header\" : {\n      \"chargingContextId\" : \"sms-sc\",\n      \"requestId\" : \"1\",\n      \"subscriberId\" : \"123456789\"\n   },\n   \"serviceResult\" : {\n      \"responseCode\" : \"SUCCESS\",\n      \"chargingSessionId\": \"MySession_1_1690851660624_HAPPY\"\n   },\n   \"serviceInformation\" : {\n      \"any\" : {}\n   },\n   \"quotaResult\" : {\n      \"responseCode\" : \"SUCCESS\",\n      \"ratingGroup\" : 200\n   }\n}\n",
-      "bodyFileName" : "resp_sms_opFin-with-credit.json",
-      "headers" : {
-        "Content-Type" : "application/json"
-      }
-    },
-    "response" : {
-      "status" : 200,
-      "headers" : {
-        "Content-Type" : "application/json",
-        "Matched-Stub-Id" : "33de7d53-8300-41d7-920c-cc31a397358a"
-      },
-      "bodyAsBase64" : "ewogICAiaGVhZGVyIiA6IHsKICAgICAgImNoYXJnaW5nQ29udGV4dElkIiA6ICJzbXMtc2MiLAogICAgICAicmVxdWVzdElkIiA6ICIxIiwKICAgICAgInN1YnNjcmliZXJJZCIgOiAiMTIzNDU2Nzg5IgogICB9LAogICAic2VydmljZVJlc3VsdCIgOiB7CiAgICAgICJyZXNwb25zZUNvZGUiIDogIlNVQ0NFU1MiLAogICAgICAiY2hhcmdpbmdTZXNzaW9uSWQiOiAiTXlTZXNzaW9uXzFfMTY5MDg1MTY2MDYyNF9IQVBQWSIKICAgfSwKICAgInNlcnZpY2VJbmZvcm1hdGlvbiIgOiB7CiAgICAgICJhbnkiIDoge30KICAgfSwKICAgInF1b3RhUmVzdWx0IiA6IHsKICAgICAgInJlc3BvbnNlQ29kZSIgOiAiU1VDQ0VTUyIsCiAgICAgICJyYXRpbmdHcm91cCIgOiAyMDAKICAgfQp9Cg==",
-      "body" : "{\n   \"header\" : {\n      \"chargingContextId\" : \"sms-sc\",\n      \"requestId\" : \"1\",\n      \"subscriberId\" : \"123456789\"\n   },\n   \"serviceResult\" : {\n      \"responseCode\" : \"SUCCESS\",\n      \"chargingSessionId\": \"MySession_1_1690851660624_HAPPY\"\n   },\n   \"serviceInformation\" : {\n      \"any\" : {}\n   },\n   \"quotaResult\" : {\n      \"responseCode\" : \"SUCCESS\",\n      \"ratingGroup\" : 200\n   }\n}\n"
-    },
-    "wasMatched" : true,
-    "timing" : {
-      "addedDelay" : 0,
-      "processTime" : 3,
-      "responseSendTime" : 0,
-      "serveTime" : 3,
-      "totalTime" : 3
-    },
-    "stubMapping" : {
-      "id" : "33de7d53-8300-41d7-920c-cc31a397358a",
-      "request" : {
-        "urlPathPattern" : "/.*",
-        "method" : "POST",
-        "headers" : {
-          "X-RequestId" : {
-            "equalTo" : "1"
-          }
-        },
-        "bodyPatterns" : [ {
-          "matchesJsonPath" : "$.serviceRequest[?(@.operationType == 'opFinal' && @.serviceIdentifier == 'sms.restcomm.org') ]"
-        } ]
-      },
-      "response" : {
-        "status" : 200,
-        "bodyFileName" : "resp_sms_opFin-with-credit.json",
-        "headers" : {
-          "Content-Type" : "application/json"
-        }
-      },
-      "uuid" : "33de7d53-8300-41d7-920c-cc31a397358a"
-    }
-  }, {
-    "id" : "7fa37409-dcab-44a1-91b2-196175331761",
-    "request" : {
-      "url" : "/ocs",
-      "absoluteUrl" : "http://responder:8099/ocs",
-      "method" : "POST",
-      "clientIp" : "172.24.0.6",
-      "headers" : {
-        "Host" : "responder:8099",
-        "Accept-Encoding" : "identity",
-        "Content-Length" : "647",
-        "X-Key" : "KafkaResourceAdaptor MySession_4_1690851660682_SUB_NOT_FOUND",
-        "Accept" : "application/json",
-        "X-ChargingContextId" : "sms-sc",
-        "X-RequestId" : "3",
-        "X-SubscriberId" : "123456789",
-        "Content-Type" : "application/json",
-        "X-SessionId" : "123456789"
-      },
-      "cookies" : { },
-      "browserProxyRequest" : false,
-      "loggedDate" : 1690851661142,
-      "bodyAsBase64" : "eyJ0cmFmZmljVHlwZVJlcXVlc3QiOiB7InJvYW1pbmdQb3NpdGlvbiI6ICJWUExNTiIsICJzZXJ2aWNlU2NlbmFyaW8iOiAiTU8ifSwgImhlYWRlciI6IHsiY2hhcmdpbmdDb250ZXh0SWQiOiAic21zLXNjIiwgInN1YnNjcmliZXJJZCI6ICIxMjM0NTY3ODkiLCAicmVxdWVzdElkIjogIjMifSwgInNlcnZpY2VSZXF1ZXN0IjogeyJzZXJ2aWNlSWRlbnRpZmllciI6ICJzbXMucmVzdGNvbW0ub3JnIiwgImNoYXJnaW5nU2Vzc2lvbklkIjogIk15U2Vzc2lvbl80XzE2OTA4NTE2NjA2ODJfU1VCX05PVF9GT1VORCIsICJvcGVyYXRpb25UeXBlIjogIm9wRmlyc3QifSwgInNlcnZpY2VJbmZvcm1hdGlvbiI6IHsibXNjQWRkcmVzcyI6ICJtc2MiLCAic2VydmljZUtleSI6IDEsICJzdGFydFRpbWVTdGFtcCI6IDAsICJjYWxsaW5nTXNpc2RuIjogIjEyMzQiLCAib3JpZ2luYWxDYWxsZWRQYXJ0eSI6ICJjYWxsZWQiLCAidmxyQWRkcmVzcyI6ICJAaGVyZSIsICJsb2NhdGlvbkluZm9ybWF0aW9uIjogeyJtbmMiOiAxLCAibWNjIjogMSwgImNlbGxJZCI6IDEsICJsYWMiOiAxfSwgImltc2kiOiAic29tZW51bWJlciJ9LCAicXVvdGFSZXF1ZXN0IjogeyJyZXF1ZXN0ZWRVbml0cyI6IDksICJ1c2VkVW5pdHMiOiAwLCAicmF0aW5nR3JvdXAiOiAwfX0=",
-      "body" : "{\"trafficTypeRequest\": {\"roamingPosition\": \"VPLMN\", \"serviceScenario\": \"MO\"}, \"header\": {\"chargingContextId\": \"sms-sc\", \"subscriberId\": \"123456789\", \"requestId\": \"3\"}, \"serviceRequest\": {\"serviceIdentifier\": \"sms.restcomm.org\", \"chargingSessionId\": \"MySession_4_1690851660682_SUB_NOT_FOUND\", \"operationType\": \"opFirst\"}, \"serviceInformation\": {\"mscAddress\": \"msc\", \"serviceKey\": 1, \"startTimeStamp\": 0, \"callingMsisdn\": \"1234\", \"originalCalledParty\": \"called\", \"vlrAddress\": \"@here\", \"locationInformation\": {\"mnc\": 1, \"mcc\": 1, \"cellId\": 1, \"lac\": 1}, \"imsi\": \"somenumber\"}, \"quotaRequest\": {\"requestedUnits\": 9, \"usedUnits\": 0, \"ratingGroup\": 0}}",
-      "protocol" : "HTTP/1.1",
-      "scheme" : "http",
-      "host" : "responder",
-      "port" : 8099,
-      "loggedDateString" : "2023-08-01T01:01:01Z",
-      "queryParams" : { }
-    },
-    "responseDefinition" : {
-      "status" : 200,
-      "body" : "{\n   \"header\" : {\n      \"chargingContextId\" : \"sms-sc\",\n      \"requestId\" : \"3\",\n      \"subscriberId\" : \"123456789\"\n   },\n   \"quotaResult\" : null,\n   \"serviceResult\" : {\n      \"chargingSessionId\": \"MySession_4_1690851660682_SUB_NOT_FOUND\",\n      \"responseCode\" : \"SUBSCRIBER_NOT_FOUND\"\n   }\n}",
-      "bodyFileName" : "resp_sms_opFir-sub-not-found.json",
-      "headers" : {
-        "Content-Type" : "application/json"
-      }
-    },
-    "response" : {
-      "status" : 200,
-      "headers" : {
-        "Content-Type" : "application/json",
-        "Matched-Stub-Id" : "fc032bc8-a3d3-4935-8f0e-f47d84f64026"
-      },
-      "bodyAsBase64" : "ewogICAiaGVhZGVyIiA6IHsKICAgICAgImNoYXJnaW5nQ29udGV4dElkIiA6ICJzbXMtc2MiLAogICAgICAicmVxdWVzdElkIiA6ICIzIiwKICAgICAgInN1YnNjcmliZXJJZCIgOiAiMTIzNDU2Nzg5IgogICB9LAogICAicXVvdGFSZXN1bHQiIDogbnVsbCwKICAgInNlcnZpY2VSZXN1bHQiIDogewogICAgICAiY2hhcmdpbmdTZXNzaW9uSWQiOiAiTXlTZXNzaW9uXzRfMTY5MDg1MTY2MDY4Ml9TVUJfTk9UX0ZPVU5EIiwKICAgICAgInJlc3BvbnNlQ29kZSIgOiAiU1VCU0NSSUJFUl9OT1RfRk9VTkQiCiAgIH0KfQ==",
-      "body" : "{\n   \"header\" : {\n      \"chargingContextId\" : \"sms-sc\",\n      \"requestId\" : \"3\",\n      \"subscriberId\" : \"123456789\"\n   },\n   \"quotaResult\" : null,\n   \"serviceResult\" : {\n      \"chargingSessionId\": \"MySession_4_1690851660682_SUB_NOT_FOUND\",\n      \"responseCode\" : \"SUBSCRIBER_NOT_FOUND\"\n   }\n}"
-    },
-    "wasMatched" : true,
-    "timing" : {
-      "addedDelay" : 0,
-      "processTime" : 3,
-      "responseSendTime" : 0,
-      "serveTime" : 3,
-      "totalTime" : 3
-    },
-    "stubMapping" : {
-      "id" : "fc032bc8-a3d3-4935-8f0e-f47d84f64026",
-      "request" : {
-        "urlPathPattern" : "/.*",
-        "method" : "POST",
-        "headers" : {
-          "X-RequestId" : {
-            "equalTo" : "3"
-          }
-        },
-        "bodyPatterns" : [ {
-          "matchesJsonPath" : "$.serviceRequest[?(@.operationType == 'opFirst' && @.serviceIdentifier == 'sms.restcomm.org')]"
-        } ]
-      },
-      "response" : {
-        "status" : 200,
-        "bodyFileName" : "resp_sms_opFir-sub-not-found.json",
-        "headers" : {
-          "Content-Type" : "application/json"
-        }
-      },
-      "uuid" : "fc032bc8-a3d3-4935-8f0e-f47d84f64026"
-    }
-  }, {
-    "id" : "733f72b9-e132-4323-bf34-04e11dd4d6c2",
-    "request" : {
-      "url" : "/ocs",
-      "absoluteUrl" : "http://responder:8099/ocs",
-      "method" : "POST",
-      "clientIp" : "172.24.0.6",
-      "headers" : {
-        "Host" : "responder:8099",
-        "Accept-Encoding" : "identity",
-        "Content-Length" : "641",
-        "X-Key" : "KafkaResourceAdaptor MySession_5_1690851660683_TIMEOUT",
-        "Accept" : "application/json",
-        "X-ChargingContextId" : "sms-sc",
-        "X-RequestId" : "4",
-        "X-SubscriberId" : "123456789",
-        "Content-Type" : "application/json",
-        "X-SessionId" : "123456789"
-      },
-      "cookies" : { },
-      "browserProxyRequest" : false,
-      "loggedDate" : 1690851661136,
-      "bodyAsBase64" : "eyJ0cmFmZmljVHlwZVJlcXVlc3QiOiB7InJvYW1pbmdQb3NpdGlvbiI6ICJWUExNTiIsICJzZXJ2aWNlU2NlbmFyaW8iOiAiTU8ifSwgImhlYWRlciI6IHsiY2hhcmdpbmdDb250ZXh0SWQiOiAic21zLXNjIiwgInN1YnNjcmliZXJJZCI6ICIxMjM0NTY3ODkiLCAicmVxdWVzdElkIjogIjQifSwgInNlcnZpY2VSZXF1ZXN0IjogeyJzZXJ2aWNlSWRlbnRpZmllciI6ICJzbXMucmVzdGNvbW0ub3JnIiwgImNoYXJnaW5nU2Vzc2lvbklkIjogIk15U2Vzc2lvbl81XzE2OTA4NTE2NjA2ODNfVElNRU9VVCIsICJvcGVyYXRpb25UeXBlIjogIm9wRmlyc3QifSwgInNlcnZpY2VJbmZvcm1hdGlvbiI6IHsibXNjQWRkcmVzcyI6ICJtc2MiLCAic2VydmljZUtleSI6IDEsICJzdGFydFRpbWVTdGFtcCI6IDAsICJjYWxsaW5nTXNpc2RuIjogIjEyMzQiLCAib3JpZ2luYWxDYWxsZWRQYXJ0eSI6ICJjYWxsZWQiLCAidmxyQWRkcmVzcyI6ICJAaGVyZSIsICJsb2NhdGlvbkluZm9ybWF0aW9uIjogeyJtbmMiOiAxLCAibWNjIjogMSwgImNlbGxJZCI6IDEsICJsYWMiOiAxfSwgImltc2kiOiAic29tZW51bWJlciJ9LCAicXVvdGFSZXF1ZXN0IjogeyJyZXF1ZXN0ZWRVbml0cyI6IDksICJ1c2VkVW5pdHMiOiAwLCAicmF0aW5nR3JvdXAiOiAwfX0=",
-      "body" : "{\"trafficTypeRequest\": {\"roamingPosition\": \"VPLMN\", \"serviceScenario\": \"MO\"}, \"header\": {\"chargingContextId\": \"sms-sc\", \"subscriberId\": \"123456789\", \"requestId\": \"4\"}, \"serviceRequest\": {\"serviceIdentifier\": \"sms.restcomm.org\", \"chargingSessionId\": \"MySession_5_1690851660683_TIMEOUT\", \"operationType\": \"opFirst\"}, \"serviceInformation\": {\"mscAddress\": \"msc\", \"serviceKey\": 1, \"startTimeStamp\": 0, \"callingMsisdn\": \"1234\", \"originalCalledParty\": \"called\", \"vlrAddress\": \"@here\", \"locationInformation\": {\"mnc\": 1, \"mcc\": 1, \"cellId\": 1, \"lac\": 1}, \"imsi\": \"somenumber\"}, \"quotaRequest\": {\"requestedUnits\": 9, \"usedUnits\": 0, \"ratingGroup\": 0}}",
-      "protocol" : "HTTP/1.1",
-      "scheme" : "http",
-      "host" : "responder",
-      "port" : 8099,
-      "loggedDateString" : "2023-08-01T01:01:01Z",
-      "queryParams" : { }
-    },
-    "responseDefinition" : {
-      "status" : 404
-    },
-    "response" : {
-      "status" : 404,
-      "headers" : {
-        "Matched-Stub-Id" : "c1d19d89-a68a-4cf2-a0d6-5e55b078dfa9"
-      },
-      "bodyAsBase64" : "",
-      "body" : ""
-    },
-    "wasMatched" : true,
-    "timing" : {
-      "addedDelay" : 0,
-      "processTime" : 2,
-      "responseSendTime" : 0,
-      "serveTime" : 2,
-      "totalTime" : 2
-    },
-    "stubMapping" : {
-      "id" : "c1d19d89-a68a-4cf2-a0d6-5e55b078dfa9",
-      "request" : {
-        "urlPathPattern" : "/.*",
-        "method" : "POST",
-        "headers" : {
-          "X-RequestId" : {
-            "equalTo" : "4"
-          }
-        },
-        "bodyPatterns" : [ {
-          "matchesJsonPath" : "$.serviceRequest[?(@.operationType == 'opFirst' && @.serviceIdentifier == 'sms.restcomm.org')]"
-        } ]
-      },
-      "response" : {
-        "status" : 404
-      },
-      "uuid" : "c1d19d89-a68a-4cf2-a0d6-5e55b078dfa9"
-    }
-  }, {
-    "id" : "30469a30-26fb-4ec2-81c3-29e121493cbd",
-    "request" : {
-      "url" : "/ocs",
-      "absoluteUrl" : "http://responder:8099/ocs",
-      "method" : "POST",
-      "clientIp" : "172.24.0.6",
-      "headers" : {
-        "Host" : "responder:8099",
-        "Accept-Encoding" : "identity",
-        "Content-Length" : "639",
-        "X-Key" : "KafkaResourceAdaptor MySession_2_1690851660680_HAPPY",
-        "Accept" : "application/json",
-        "X-ChargingContextId" : "sms-sc",
-        "X-RequestId" : "1",
-        "X-SubscriberId" : "123456789",
-        "Content-Type" : "application/json",
-        "X-SessionId" : "123456789"
-      },
-      "cookies" : { },
-      "browserProxyRequest" : false,
-      "loggedDate" : 1690851661022,
-      "bodyAsBase64" : "eyJ0cmFmZmljVHlwZVJlcXVlc3QiOiB7InJvYW1pbmdQb3NpdGlvbiI6ICJWUExNTiIsICJzZXJ2aWNlU2NlbmFyaW8iOiAiTU8ifSwgImhlYWRlciI6IHsiY2hhcmdpbmdDb250ZXh0SWQiOiAic21zLXNjIiwgInN1YnNjcmliZXJJZCI6ICIxMjM0NTY3ODkiLCAicmVxdWVzdElkIjogIjEifSwgInNlcnZpY2VSZXF1ZXN0IjogeyJzZXJ2aWNlSWRlbnRpZmllciI6ICJzbXMucmVzdGNvbW0ub3JnIiwgImNoYXJnaW5nU2Vzc2lvbklkIjogIk15U2Vzc2lvbl8yXzE2OTA4NTE2NjA2ODBfSEFQUFkiLCAib3BlcmF0aW9uVHlwZSI6ICJvcEZpcnN0In0sICJzZXJ2aWNlSW5mb3JtYXRpb24iOiB7Im1zY0FkZHJlc3MiOiAibXNjIiwgInNlcnZpY2VLZXkiOiAxLCAic3RhcnRUaW1lU3RhbXAiOiAwLCAiY2FsbGluZ01zaXNkbiI6ICIxMjM0IiwgIm9yaWdpbmFsQ2FsbGVkUGFydHkiOiAiY2FsbGVkIiwgInZsckFkZHJlc3MiOiAiQGhlcmUiLCAibG9jYXRpb25JbmZvcm1hdGlvbiI6IHsibW5jIjogMSwgIm1jYyI6IDEsICJjZWxsSWQiOiAxLCAibGFjIjogMX0sICJpbXNpIjogInNvbWVudW1iZXIifSwgInF1b3RhUmVxdWVzdCI6IHsicmVxdWVzdGVkVW5pdHMiOiA5LCAidXNlZFVuaXRzIjogMCwgInJhdGluZ0dyb3VwIjogMH19",
-      "body" : "{\"trafficTypeRequest\": {\"roamingPosition\": \"VPLMN\", \"serviceScenario\": \"MO\"}, \"header\": {\"chargingContextId\": \"sms-sc\", \"subscriberId\": \"123456789\", \"requestId\": \"1\"}, \"serviceRequest\": {\"serviceIdentifier\": \"sms.restcomm.org\", \"chargingSessionId\": \"MySession_2_1690851660680_HAPPY\", \"operationType\": \"opFirst\"}, \"serviceInformation\": {\"mscAddress\": \"msc\", \"serviceKey\": 1, \"startTimeStamp\": 0, \"callingMsisdn\": \"1234\", \"originalCalledParty\": \"called\", \"vlrAddress\": \"@here\", \"locationInformation\": {\"mnc\": 1, \"mcc\": 1, \"cellId\": 1, \"lac\": 1}, \"imsi\": \"somenumber\"}, \"quotaRequest\": {\"requestedUnits\": 9, \"usedUnits\": 0, \"ratingGroup\": 0}}",
-      "protocol" : "HTTP/1.1",
-      "scheme" : "http",
-      "host" : "responder",
-      "port" : 8099,
-      "loggedDateString" : "2023-08-01T01:01:01Z",
-      "queryParams" : { }
-    },
-    "responseDefinition" : {
-      "status" : 200,
-      "body" : "{\n    \"header\": {\n      \"chargingContextId\" : \"sms-sc\",\n      \"requestId\" : \"1\",\n      \"subscriberId\" : \"123456789\"\n    },\n    \"serviceResult\": {\n        \"chargingSessionId\": \"MySession_2_1690851660680_HAPPY\",\n        \"responseCode\": \"SUCCESS\"\n    },\n    \"serviceInformation\": {\n        \"any\": {}\n    },\n    \"quotaResult\": {\n        \"responseCode\": \"SUCCESS\",\n        \"grantedUnits\": 1000000,\n        \"ratingGroup\": 200,\n        \"validityTime\": 3600\n    }\n}\n\n",
-      "bodyFileName" : "resp_sms_opFir-with-credit.json",
-      "headers" : {
-        "Content-Type" : "application/json"
-      }
-    },
-    "response" : {
-      "status" : 200,
-      "headers" : {
-        "Content-Type" : "application/json",
-        "Matched-Stub-Id" : "6ecc04d0-6b93-4023-8a5d-0ead3699b69f"
-      },
-      "bodyAsBase64" : "ewogICAgImhlYWRlciI6IHsKICAgICAgImNoYXJnaW5nQ29udGV4dElkIiA6ICJzbXMtc2MiLAogICAgICAicmVxdWVzdElkIiA6ICIxIiwKICAgICAgInN1YnNjcmliZXJJZCIgOiAiMTIzNDU2Nzg5IgogICAgfSwKICAgICJzZXJ2aWNlUmVzdWx0IjogewogICAgICAgICJjaGFyZ2luZ1Nlc3Npb25JZCI6ICJNeVNlc3Npb25fMl8xNjkwODUxNjYwNjgwX0hBUFBZIiwKICAgICAgICAicmVzcG9uc2VDb2RlIjogIlNVQ0NFU1MiCiAgICB9LAogICAgInNlcnZpY2VJbmZvcm1hdGlvbiI6IHsKICAgICAgICAiYW55Ijoge30KICAgIH0sCiAgICAicXVvdGFSZXN1bHQiOiB7CiAgICAgICAgInJlc3BvbnNlQ29kZSI6ICJTVUNDRVNTIiwKICAgICAgICAiZ3JhbnRlZFVuaXRzIjogMTAwMDAwMCwKICAgICAgICAicmF0aW5nR3JvdXAiOiAyMDAsCiAgICAgICAgInZhbGlkaXR5VGltZSI6IDM2MDAKICAgIH0KfQoK",
-      "body" : "{\n    \"header\": {\n      \"chargingContextId\" : \"sms-sc\",\n      \"requestId\" : \"1\",\n      \"subscriberId\" : \"123456789\"\n    },\n    \"serviceResult\": {\n        \"chargingSessionId\": \"MySession_2_1690851660680_HAPPY\",\n        \"responseCode\": \"SUCCESS\"\n    },\n    \"serviceInformation\": {\n        \"any\": {}\n    },\n    \"quotaResult\": {\n        \"responseCode\": \"SUCCESS\",\n        \"grantedUnits\": 1000000,\n        \"ratingGroup\": 200,\n        \"validityTime\": 3600\n    }\n}\n\n"
-    },
-    "wasMatched" : true,
-    "timing" : {
-      "addedDelay" : 0,
-      "processTime" : 1,
-      "responseSendTime" : 0,
-      "serveTime" : 1,
-      "totalTime" : 1
-    },
-    "stubMapping" : {
-      "id" : "6ecc04d0-6b93-4023-8a5d-0ead3699b69f",
-      "request" : {
-        "urlPathPattern" : "/.*",
-        "method" : "POST",
-        "headers" : {
-          "X-RequestId" : {
-            "equalTo" : "1"
-          }
-        },
-        "bodyPatterns" : [ {
-          "matchesJsonPath" : "$.serviceRequest[?(@.operationType == 'opFirst' && @.serviceIdentifier == 'sms.restcomm.org')]"
-        } ]
-      },
-      "response" : {
-        "status" : 200,
-        "bodyFileName" : "resp_sms_opFir-with-credit.json",
-        "headers" : {
-          "Content-Type" : "application/json"
-        }
-      },
-      "uuid" : "6ecc04d0-6b93-4023-8a5d-0ead3699b69f"
-    }
-  }, {
-    "id" : "d2bd5ff8-14bf-4eac-9d10-edab7acd1f3d",
-    "request" : {
-      "url" : "/ocs",
-      "absoluteUrl" : "http://responder:8099/ocs",
-      "method" : "POST",
-      "clientIp" : "172.24.0.6",
-      "headers" : {
-        "Host" : "responder:8099",
-        "Accept-Encoding" : "identity",
-        "Content-Length" : "643",
-        "X-Key" : "KafkaResourceAdaptor MySession_3_1690851660681_NO_CREDIT",
-        "Accept" : "application/json",
-        "X-ChargingContextId" : "sms-sc",
-        "X-RequestId" : "2",
-        "X-SubscriberId" : "123456789",
-        "Content-Type" : "application/json",
-        "X-SessionId" : "123456789"
-      },
-      "cookies" : { },
-      "browserProxyRequest" : false,
-      "loggedDate" : 1690851660909,
-      "bodyAsBase64" : "eyJ0cmFmZmljVHlwZVJlcXVlc3QiOiB7InJvYW1pbmdQb3NpdGlvbiI6ICJWUExNTiIsICJzZXJ2aWNlU2NlbmFyaW8iOiAiTU8ifSwgImhlYWRlciI6IHsiY2hhcmdpbmdDb250ZXh0SWQiOiAic21zLXNjIiwgInN1YnNjcmliZXJJZCI6ICIxMjM0NTY3ODkiLCAicmVxdWVzdElkIjogIjIifSwgInNlcnZpY2VSZXF1ZXN0IjogeyJzZXJ2aWNlSWRlbnRpZmllciI6ICJzbXMucmVzdGNvbW0ub3JnIiwgImNoYXJnaW5nU2Vzc2lvbklkIjogIk15U2Vzc2lvbl8zXzE2OTA4NTE2NjA2ODFfTk9fQ1JFRElUIiwgIm9wZXJhdGlvblR5cGUiOiAib3BGaXJzdCJ9LCAic2VydmljZUluZm9ybWF0aW9uIjogeyJtc2NBZGRyZXNzIjogIm1zYyIsICJzZXJ2aWNlS2V5IjogMSwgInN0YXJ0VGltZVN0YW1wIjogMCwgImNhbGxpbmdNc2lzZG4iOiAiMTIzNCIsICJvcmlnaW5hbENhbGxlZFBhcnR5IjogImNhbGxlZCIsICJ2bHJBZGRyZXNzIjogIkBoZXJlIiwgImxvY2F0aW9uSW5mb3JtYXRpb24iOiB7Im1uYyI6IDEsICJtY2MiOiAxLCAiY2VsbElkIjogMSwgImxhYyI6IDF9LCAiaW1zaSI6ICJzb21lbnVtYmVyIn0sICJxdW90YVJlcXVlc3QiOiB7InJlcXVlc3RlZFVuaXRzIjogOSwgInVzZWRVbml0cyI6IDAsICJyYXRpbmdHcm91cCI6IDB9fQ==",
-      "body" : "{\"trafficTypeRequest\": {\"roamingPosition\": \"VPLMN\", \"serviceScenario\": \"MO\"}, \"header\": {\"chargingContextId\": \"sms-sc\", \"subscriberId\": \"123456789\", \"requestId\": \"2\"}, \"serviceRequest\": {\"serviceIdentifier\": \"sms.restcomm.org\", \"chargingSessionId\": \"MySession_3_1690851660681_NO_CREDIT\", \"operationType\": \"opFirst\"}, \"serviceInformation\": {\"mscAddress\": \"msc\", \"serviceKey\": 1, \"startTimeStamp\": 0, \"callingMsisdn\": \"1234\", \"originalCalledParty\": \"called\", \"vlrAddress\": \"@here\", \"locationInformation\": {\"mnc\": 1, \"mcc\": 1, \"cellId\": 1, \"lac\": 1}, \"imsi\": \"somenumber\"}, \"quotaRequest\": {\"requestedUnits\": 9, \"usedUnits\": 0, \"ratingGroup\": 0}}",
-      "protocol" : "HTTP/1.1",
-      "scheme" : "http",
-      "host" : "responder",
-      "port" : 8099,
-      "loggedDateString" : "2023-08-01T01:01:00Z",
-      "queryParams" : { }
-    },
-    "responseDefinition" : {
-      "status" : 200,
-      "body" : "{\n   \"header\" : {\n      \"chargingContextId\" : \"sms-sc\",\n      \"requestId\" : \"2\",\n      \"subscriberId\" : \"123456789\"\n   },\n   \"quotaResult\" : null,\n   \"serviceResult\" : {\n      \"chargingSessionId\": \"MySession_3_1690851660681_NO_CREDIT\",\n      \"responseCode\" : \"NO_CREDIT_AVAILABLE\"\n   }\n}",
-      "bodyFileName" : "resp_sms_opFir-no-credit.json",
-      "headers" : {
-        "Content-Type" : "application/json"
-      }
-    },
-    "response" : {
-      "status" : 200,
-      "headers" : {
-        "Content-Type" : "application/json",
-        "Matched-Stub-Id" : "610b48f5-1793-454f-8e42-aa2f51c23438"
-      },
-      "bodyAsBase64" : "ewogICAiaGVhZGVyIiA6IHsKICAgICAgImNoYXJnaW5nQ29udGV4dElkIiA6ICJzbXMtc2MiLAogICAgICAicmVxdWVzdElkIiA6ICIyIiwKICAgICAgInN1YnNjcmliZXJJZCIgOiAiMTIzNDU2Nzg5IgogICB9LAogICAicXVvdGFSZXN1bHQiIDogbnVsbCwKICAgInNlcnZpY2VSZXN1bHQiIDogewogICAgICAiY2hhcmdpbmdTZXNzaW9uSWQiOiAiTXlTZXNzaW9uXzNfMTY5MDg1MTY2MDY4MV9OT19DUkVESVQiLAogICAgICAicmVzcG9uc2VDb2RlIiA6ICJOT19DUkVESVRfQVZBSUxBQkxFIgogICB9Cn0=",
-      "body" : "{\n   \"header\" : {\n      \"chargingContextId\" : \"sms-sc\",\n      \"requestId\" : \"2\",\n      \"subscriberId\" : \"123456789\"\n   },\n   \"quotaResult\" : null,\n   \"serviceResult\" : {\n      \"chargingSessionId\": \"MySession_3_1690851660681_NO_CREDIT\",\n      \"responseCode\" : \"NO_CREDIT_AVAILABLE\"\n   }\n}"
-    },
-    "wasMatched" : true,
-    "timing" : {
-      "addedDelay" : 0,
-      "processTime" : 4,
-      "responseSendTime" : 0,
-      "serveTime" : 4,
-      "totalTime" : 4
-    },
-    "stubMapping" : {
-      "id" : "610b48f5-1793-454f-8e42-aa2f51c23438",
-      "request" : {
-        "urlPathPattern" : "/.*",
-        "method" : "POST",
-        "headers" : {
-          "X-RequestId" : {
-            "equalTo" : "2"
-          }
-        },
-        "bodyPatterns" : [ {
-          "matchesJsonPath" : "$.serviceRequest[?(@.operationType == 'opFirst' && @.serviceIdentifier == 'sms.restcomm.org')]"
-        } ]
-      },
-      "response" : {
-        "status" : 200,
-        "bodyFileName" : "resp_sms_opFir-no-credit.json",
-        "headers" : {
-          "Content-Type" : "application/json"
-        }
-      },
-      "uuid" : "610b48f5-1793-454f-8e42-aa2f51c23438"
-    }
-  }, {
-    "id" : "7dec2a5f-c29b-4d53-9136-d04b25392e8e",
-    "request" : {
-      "url" : "/ocs",
-      "absoluteUrl" : "http://responder:8099/ocs",
-      "method" : "POST",
-      "clientIp" : "172.24.0.6",
-      "headers" : {
-        "Host" : "responder:8099",
-        "Accept-Encoding" : "identity",
-        "Content-Length" : "639",
-        "X-Key" : "KafkaResourceAdaptor MySession_1_1690851660624_HAPPY",
-        "Accept" : "application/json",
-        "X-ChargingContextId" : "sms-sc",
-        "X-RequestId" : "1",
-        "X-SubscriberId" : "123456789",
-        "Content-Type" : "application/json",
-        "X-SessionId" : "123456789"
-      },
-      "cookies" : { },
-      "browserProxyRequest" : false,
-      "loggedDate" : 1690851660774,
-      "bodyAsBase64" : "eyJ0cmFmZmljVHlwZVJlcXVlc3QiOiB7InJvYW1pbmdQb3NpdGlvbiI6ICJWUExNTiIsICJzZXJ2aWNlU2NlbmFyaW8iOiAiTU8ifSwgImhlYWRlciI6IHsiY2hhcmdpbmdDb250ZXh0SWQiOiAic21zLXNjIiwgInN1YnNjcmliZXJJZCI6ICIxMjM0NTY3ODkiLCAicmVxdWVzdElkIjogIjEifSwgInNlcnZpY2VSZXF1ZXN0IjogeyJzZXJ2aWNlSWRlbnRpZmllciI6ICJzbXMucmVzdGNvbW0ub3JnIiwgImNoYXJnaW5nU2Vzc2lvbklkIjogIk15U2Vzc2lvbl8xXzE2OTA4NTE2NjA2MjRfSEFQUFkiLCAib3BlcmF0aW9uVHlwZSI6ICJvcEZpcnN0In0sICJzZXJ2aWNlSW5mb3JtYXRpb24iOiB7Im1zY0FkZHJlc3MiOiAibXNjIiwgInNlcnZpY2VLZXkiOiAxLCAic3RhcnRUaW1lU3RhbXAiOiAwLCAiY2FsbGluZ01zaXNkbiI6ICIxMjM0IiwgIm9yaWdpbmFsQ2FsbGVkUGFydHkiOiAiY2FsbGVkIiwgInZsckFkZHJlc3MiOiAiQGhlcmUiLCAibG9jYXRpb25JbmZvcm1hdGlvbiI6IHsibW5jIjogMSwgIm1jYyI6IDEsICJjZWxsSWQiOiAxLCAibGFjIjogMX0sICJpbXNpIjogInNvbWVudW1iZXIifSwgInF1b3RhUmVxdWVzdCI6IHsicmVxdWVzdGVkVW5pdHMiOiA5LCAidXNlZFVuaXRzIjogMCwgInJhdGluZ0dyb3VwIjogMH19",
-      "body" : "{\"trafficTypeRequest\": {\"roamingPosition\": \"VPLMN\", \"serviceScenario\": \"MO\"}, \"header\": {\"chargingContextId\": \"sms-sc\", \"subscriberId\": \"123456789\", \"requestId\": \"1\"}, \"serviceRequest\": {\"serviceIdentifier\": \"sms.restcomm.org\", \"chargingSessionId\": \"MySession_1_1690851660624_HAPPY\", \"operationType\": \"opFirst\"}, \"serviceInformation\": {\"mscAddress\": \"msc\", \"serviceKey\": 1, \"startTimeStamp\": 0, \"callingMsisdn\": \"1234\", \"originalCalledParty\": \"called\", \"vlrAddress\": \"@here\", \"locationInformation\": {\"mnc\": 1, \"mcc\": 1, \"cellId\": 1, \"lac\": 1}, \"imsi\": \"somenumber\"}, \"quotaRequest\": {\"requestedUnits\": 9, \"usedUnits\": 0, \"ratingGroup\": 0}}",
-      "protocol" : "HTTP/1.1",
-      "scheme" : "http",
-      "host" : "responder",
-      "port" : 8099,
-      "loggedDateString" : "2023-08-01T01:01:00Z",
-      "queryParams" : { }
-    },
-    "responseDefinition" : {
-      "status" : 200,
-      "body" : "{\n    \"header\": {\n      \"chargingContextId\" : \"sms-sc\",\n      \"requestId\" : \"1\",\n      \"subscriberId\" : \"123456789\"\n    },\n    \"serviceResult\": {\n        \"chargingSessionId\": \"MySession_1_1690851660624_HAPPY\",\n        \"responseCode\": \"SUCCESS\"\n    },\n    \"serviceInformation\": {\n        \"any\": {}\n    },\n    \"quotaResult\": {\n        \"responseCode\": \"SUCCESS\",\n        \"grantedUnits\": 1000000,\n        \"ratingGroup\": 200,\n        \"validityTime\": 3600\n    }\n}\n\n",
-      "bodyFileName" : "resp_sms_opFir-with-credit.json",
-      "headers" : {
-        "Content-Type" : "application/json"
-      }
-    },
-    "response" : {
-      "status" : 200,
-      "headers" : {
-        "Content-Type" : "application/json",
-        "Matched-Stub-Id" : "6ecc04d0-6b93-4023-8a5d-0ead3699b69f"
-      },
-      "bodyAsBase64" : "ewogICAgImhlYWRlciI6IHsKICAgICAgImNoYXJnaW5nQ29udGV4dElkIiA6ICJzbXMtc2MiLAogICAgICAicmVxdWVzdElkIiA6ICIxIiwKICAgICAgInN1YnNjcmliZXJJZCIgOiAiMTIzNDU2Nzg5IgogICAgfSwKICAgICJzZXJ2aWNlUmVzdWx0IjogewogICAgICAgICJjaGFyZ2luZ1Nlc3Npb25JZCI6ICJNeVNlc3Npb25fMV8xNjkwODUxNjYwNjI0X0hBUFBZIiwKICAgICAgICAicmVzcG9uc2VDb2RlIjogIlNVQ0NFU1MiCiAgICB9LAogICAgInNlcnZpY2VJbmZvcm1hdGlvbiI6IHsKICAgICAgICAiYW55Ijoge30KICAgIH0sCiAgICAicXVvdGFSZXN1bHQiOiB7CiAgICAgICAgInJlc3BvbnNlQ29kZSI6ICJTVUNDRVNTIiwKICAgICAgICAiZ3JhbnRlZFVuaXRzIjogMTAwMDAwMCwKICAgICAgICAicmF0aW5nR3JvdXAiOiAyMDAsCiAgICAgICAgInZhbGlkaXR5VGltZSI6IDM2MDAKICAgIH0KfQoK",
-      "body" : "{\n    \"header\": {\n      \"chargingContextId\" : \"sms-sc\",\n      \"requestId\" : \"1\",\n      \"subscriberId\" : \"123456789\"\n    },\n    \"serviceResult\": {\n        \"chargingSessionId\": \"MySession_1_1690851660624_HAPPY\",\n        \"responseCode\": \"SUCCESS\"\n    },\n    \"serviceInformation\": {\n        \"any\": {}\n    },\n    \"quotaResult\": {\n        \"responseCode\": \"SUCCESS\",\n        \"grantedUnits\": 1000000,\n        \"ratingGroup\": 200,\n        \"validityTime\": 3600\n    }\n}\n\n"
-    },
-    "wasMatched" : true,
-    "timing" : {
-      "addedDelay" : 0,
-      "processTime" : 80,
-      "responseSendTime" : 0,
-      "serveTime" : 80,
-      "totalTime" : 80
-    },
-    "stubMapping" : {
-      "id" : "6ecc04d0-6b93-4023-8a5d-0ead3699b69f",
-      "request" : {
-        "urlPathPattern" : "/.*",
-        "method" : "POST",
-        "headers" : {
-          "X-RequestId" : {
-            "equalTo" : "1"
-          }
-        },
-        "bodyPatterns" : [ {
-          "matchesJsonPath" : "$.serviceRequest[?(@.operationType == 'opFirst' && @.serviceIdentifier == 'sms.restcomm.org')]"
-        } ]
-      },
-      "response" : {
-        "status" : 200,
-        "bodyFileName" : "resp_sms_opFir-with-credit.json",
-        "headers" : {
-          "Content-Type" : "application/json"
-        }
-      },
-      "uuid" : "6ecc04d0-6b93-4023-8a5d-0ead3699b69f"
-    }
-  }, {
-    "id" : "4729d2d8-463c-4a1b-8f90-a15d1da82ee6",
-    "request" : {
-      "url" : "/hello",
-      "absoluteUrl" : "http://responder:8099/hello",
-      "method" : "GET",
-      "clientIp" : "172.24.0.6",
-      "headers" : {
-        "Host" : "responder:8099",
-        "Accept-Encoding" : "identity"
-      },
-      "cookies" : { },
-      "browserProxyRequest" : false,
-      "loggedDate" : 1690851570980,
-      "bodyAsBase64" : "",
-      "body" : "",
-      "protocol" : "HTTP/1.1",
-      "scheme" : "http",
-      "host" : "responder",
-      "port" : 8099,
-      "loggedDateString" : "2023-08-01T00:59:30Z",
-      "queryParams" : { }
-    },
-    "responseDefinition" : {
-      "status" : 200
-    },
-    "response" : {
-      "status" : 200,
-      "headers" : {
-        "Matched-Stub-Id" : "63883d0e-ef49-4933-a7d5-fe7752b3c4ef"
-      },
-      "bodyAsBase64" : "",
-      "body" : ""
-    },
-    "wasMatched" : true,
-    "timing" : {
-      "addedDelay" : 0,
-      "processTime" : 43,
-      "responseSendTime" : 4,
-      "serveTime" : 47,
-      "totalTime" : 47
-    },
-    "stubMapping" : {
-      "id" : "63883d0e-ef49-4933-a7d5-fe7752b3c4ef",
-      "request" : {
-        "urlPathPattern" : "/hello",
-        "method" : "GET"
-      },
-      "response" : {
-        "status" : 200
-      },
-      "uuid" : "63883d0e-ef49-4933-a7d5-fe7752b3c4ef"
-    }
-  } ],
-  "meta" : {
-    "total" : 8
-  },
-  "requestJournalDisabled" : false
+	"requests": [
+		{
+			"id": "67680a11-a956-4567-9542-ce338d14d058",
+			"request": {
+				"url": "/ocs",
+				"absoluteUrl": "http://responder:8099/ocs",
+				"method": "POST",
+				"clientIp": "172.24.0.6",
+				"headers": {
+					"Host": "responder:8099",
+					"Accept-Encoding": "identity",
+					"Content-Length": "639",
+					"X-Key": "KafkaResourceAdaptor MySession_2_1690881616132_HAPPY",
+					"Accept": "application/json",
+					"X-ChargingContextId": "sms-sc",
+					"X-RequestId": "1",
+					"X-SubscriberId": "123456789",
+					"Content-Type": "application/json",
+					"X-SessionId": "123456789"
+				},
+				"cookies": {
+				},
+				"browserProxyRequest": false,
+				"loggedDate": 1690881616759,
+				"bodyAsBase64": "eyJ0cmFmZmljVHlwZVJlcXVlc3QiOiB7InJvYW1pbmdQb3NpdGlvbiI6ICJWUExNTiIsICJzZXJ2aWNlU2NlbmFyaW8iOiAiTU8ifSwgImhlYWRlciI6IHsiY2hhcmdpbmdDb250ZXh0SWQiOiAic21zLXNjIiwgInN1YnNjcmliZXJJZCI6ICIxMjM0NTY3ODkiLCAicmVxdWVzdElkIjogIjEifSwgInNlcnZpY2VSZXF1ZXN0IjogeyJzZXJ2aWNlSWRlbnRpZmllciI6ICJzbXMucmVzdGNvbW0ub3JnIiwgImNoYXJnaW5nU2Vzc2lvbklkIjogIk15U2Vzc2lvbl8yXzE2OTA4ODE2MTYxMzJfSEFQUFkiLCAib3BlcmF0aW9uVHlwZSI6ICJvcEZpbmFsIn0sICJzZXJ2aWNlSW5mb3JtYXRpb24iOiB7Im1zY0FkZHJlc3MiOiAibXNjIiwgInNlcnZpY2VLZXkiOiAxLCAic3RhcnRUaW1lU3RhbXAiOiAwLCAiY2FsbGluZ01zaXNkbiI6ICIxMjM0IiwgIm9yaWdpbmFsQ2FsbGVkUGFydHkiOiAiY2FsbGVkIiwgInZsckFkZHJlc3MiOiAiQGhlcmUiLCAibG9jYXRpb25JbmZvcm1hdGlvbiI6IHsibW5jIjogMSwgIm1jYyI6IDEsICJjZWxsSWQiOiAxLCAibGFjIjogMX0sICJpbXNpIjogInNvbWVudW1iZXIifSwgInF1b3RhUmVxdWVzdCI6IHsicmVxdWVzdGVkVW5pdHMiOiA5LCAidXNlZFVuaXRzIjogMCwgInJhdGluZ0dyb3VwIjogMH19",
+				"body": "{\"trafficTypeRequest\": {\"roamingPosition\": \"VPLMN\", \"serviceScenario\": \"MO\"}, \"header\": {\"chargingContextId\": \"sms-sc\", \"subscriberId\": \"123456789\", \"requestId\": \"1\"}, \"serviceRequest\": {\"serviceIdentifier\": \"sms.restcomm.org\", \"chargingSessionId\": \"MySession_2_1690881616132_HAPPY\", \"operationType\": \"opFinal\"}, \"serviceInformation\": {\"mscAddress\": \"msc\", \"serviceKey\": 1, \"startTimeStamp\": 0, \"callingMsisdn\": \"1234\", \"originalCalledParty\": \"called\", \"vlrAddress\": \"@here\", \"locationInformation\": {\"mnc\": 1, \"mcc\": 1, \"cellId\": 1, \"lac\": 1}, \"imsi\": \"somenumber\"}, \"quotaRequest\": {\"requestedUnits\": 9, \"usedUnits\": 0, \"ratingGroup\": 0}}",
+				"protocol": "HTTP/1.1",
+				"scheme": "http",
+				"host": "responder",
+				"port": 8099,
+				"loggedDateString": "2023-08-01T09:20:16Z",
+				"queryParams": {
+				}
+			},
+			"responseDefinition": {
+				"status": 200,
+				"body": "{\n   \"header\" : {\n      \"chargingContextId\" : \"sms-sc\",\n      \"requestId\" : \"1\",\n      \"subscriberId\" : \"123456789\"\n   },\n   \"serviceResult\" : {\n      \"responseCode\" : \"SUCCESS\",\n      \"chargingSessionId\": \"MySession_2_1690881616132_HAPPY\"\n   },\n   \"serviceInformation\" : {\n      \"any\" : {}\n   },\n   \"quotaResult\" : {\n      \"responseCode\" : \"SUCCESS\",\n      \"ratingGroup\" : 200\n   }\n}\n",
+				"bodyFileName": "resp_sms_opFin-with-credit.json",
+				"headers": {
+					"Content-Type": "application/json"
+				}
+			},
+			"response": {
+				"status": 200,
+				"headers": {
+					"Content-Type": "application/json",
+					"Matched-Stub-Id": "f935e6e6-6058-4460-ab40-dd0fff97bef5",
+					"Matched-Stub-Name": "sms_opFin-with-credit"
+				},
+				"bodyAsBase64": "ewogICAiaGVhZGVyIiA6IHsKICAgICAgImNoYXJnaW5nQ29udGV4dElkIiA6ICJzbXMtc2MiLAogICAgICAicmVxdWVzdElkIiA6ICIxIiwKICAgICAgInN1YnNjcmliZXJJZCIgOiAiMTIzNDU2Nzg5IgogICB9LAogICAic2VydmljZVJlc3VsdCIgOiB7CiAgICAgICJyZXNwb25zZUNvZGUiIDogIlNVQ0NFU1MiLAogICAgICAiY2hhcmdpbmdTZXNzaW9uSWQiOiAiTXlTZXNzaW9uXzJfMTY5MDg4MTYxNjEzMl9IQVBQWSIKICAgfSwKICAgInNlcnZpY2VJbmZvcm1hdGlvbiIgOiB7CiAgICAgICJhbnkiIDoge30KICAgfSwKICAgInF1b3RhUmVzdWx0IiA6IHsKICAgICAgInJlc3BvbnNlQ29kZSIgOiAiU1VDQ0VTUyIsCiAgICAgICJyYXRpbmdHcm91cCIgOiAyMDAKICAgfQp9Cg==",
+				"body": "{\n   \"header\" : {\n      \"chargingContextId\" : \"sms-sc\",\n      \"requestId\" : \"1\",\n      \"subscriberId\" : \"123456789\"\n   },\n   \"serviceResult\" : {\n      \"responseCode\" : \"SUCCESS\",\n      \"chargingSessionId\": \"MySession_2_1690881616132_HAPPY\"\n   },\n   \"serviceInformation\" : {\n      \"any\" : {}\n   },\n   \"quotaResult\" : {\n      \"responseCode\" : \"SUCCESS\",\n      \"ratingGroup\" : 200\n   }\n}\n"
+			},
+			"wasMatched": true,
+			"timing": {
+				"addedDelay": 0,
+				"processTime": 2,
+				"responseSendTime": 0,
+				"serveTime": 2,
+				"totalTime": 2
+			},
+			"stubMapping": {
+				"id": "f935e6e6-6058-4460-ab40-dd0fff97bef5",
+				"name": "sms_opFin-with-credit",
+				"request": {
+					"urlPathPattern": "/.*",
+					"method": "POST",
+					"headers": {
+						"X-RequestId": {
+							"equalTo": "1"
+						}
+					},
+					"bodyPatterns": [
+						{
+							"matchesJsonPath": "$.serviceRequest[?(@.operationType == 'opFinal' && @.serviceIdentifier == 'sms.restcomm.org') ]"
+						}
+					]
+				},
+				"response": {
+					"status": 200,
+					"bodyFileName": "resp_sms_opFin-with-credit.json",
+					"headers": {
+						"Content-Type": "application/json"
+					}
+				},
+				"uuid": "f935e6e6-6058-4460-ab40-dd0fff97bef5"
+			}
+		},
+		{
+			"id": "d21b5d2f-694f-4280-90e0-3a2c20b997dc",
+			"request": {
+				"url": "/ocs",
+				"absoluteUrl": "http://responder:8099/ocs",
+				"method": "POST",
+				"clientIp": "172.24.0.6",
+				"headers": {
+					"Host": "responder:8099",
+					"Accept-Encoding": "identity",
+					"Content-Length": "639",
+					"X-Key": "KafkaResourceAdaptor MySession_1_1690881616127_HAPPY",
+					"Accept": "application/json",
+					"X-ChargingContextId": "sms-sc",
+					"X-RequestId": "1",
+					"X-SubscriberId": "123456789",
+					"Content-Type": "application/json",
+					"X-SessionId": "123456789"
+				},
+				"cookies": {
+				},
+				"browserProxyRequest": false,
+				"loggedDate": 1690881616645,
+				"bodyAsBase64": "eyJ0cmFmZmljVHlwZVJlcXVlc3QiOiB7InJvYW1pbmdQb3NpdGlvbiI6ICJWUExNTiIsICJzZXJ2aWNlU2NlbmFyaW8iOiAiTU8ifSwgImhlYWRlciI6IHsiY2hhcmdpbmdDb250ZXh0SWQiOiAic21zLXNjIiwgInN1YnNjcmliZXJJZCI6ICIxMjM0NTY3ODkiLCAicmVxdWVzdElkIjogIjEifSwgInNlcnZpY2VSZXF1ZXN0IjogeyJzZXJ2aWNlSWRlbnRpZmllciI6ICJzbXMucmVzdGNvbW0ub3JnIiwgImNoYXJnaW5nU2Vzc2lvbklkIjogIk15U2Vzc2lvbl8xXzE2OTA4ODE2MTYxMjdfSEFQUFkiLCAib3BlcmF0aW9uVHlwZSI6ICJvcEZpbmFsIn0sICJzZXJ2aWNlSW5mb3JtYXRpb24iOiB7Im1zY0FkZHJlc3MiOiAibXNjIiwgInNlcnZpY2VLZXkiOiAxLCAic3RhcnRUaW1lU3RhbXAiOiAwLCAiY2FsbGluZ01zaXNkbiI6ICIxMjM0IiwgIm9yaWdpbmFsQ2FsbGVkUGFydHkiOiAiY2FsbGVkIiwgInZsckFkZHJlc3MiOiAiQGhlcmUiLCAibG9jYXRpb25JbmZvcm1hdGlvbiI6IHsibW5jIjogMSwgIm1jYyI6IDEsICJjZWxsSWQiOiAxLCAibGFjIjogMX0sICJpbXNpIjogInNvbWVudW1iZXIifSwgInF1b3RhUmVxdWVzdCI6IHsicmVxdWVzdGVkVW5pdHMiOiA5LCAidXNlZFVuaXRzIjogMCwgInJhdGluZ0dyb3VwIjogMH19",
+				"body": "{\"trafficTypeRequest\": {\"roamingPosition\": \"VPLMN\", \"serviceScenario\": \"MO\"}, \"header\": {\"chargingContextId\": \"sms-sc\", \"subscriberId\": \"123456789\", \"requestId\": \"1\"}, \"serviceRequest\": {\"serviceIdentifier\": \"sms.restcomm.org\", \"chargingSessionId\": \"MySession_1_1690881616127_HAPPY\", \"operationType\": \"opFinal\"}, \"serviceInformation\": {\"mscAddress\": \"msc\", \"serviceKey\": 1, \"startTimeStamp\": 0, \"callingMsisdn\": \"1234\", \"originalCalledParty\": \"called\", \"vlrAddress\": \"@here\", \"locationInformation\": {\"mnc\": 1, \"mcc\": 1, \"cellId\": 1, \"lac\": 1}, \"imsi\": \"somenumber\"}, \"quotaRequest\": {\"requestedUnits\": 9, \"usedUnits\": 0, \"ratingGroup\": 0}}",
+				"protocol": "HTTP/1.1",
+				"scheme": "http",
+				"host": "responder",
+				"port": 8099,
+				"loggedDateString": "2023-08-01T09:20:16Z",
+				"queryParams": {
+				}
+			},
+			"responseDefinition": {
+				"status": 200,
+				"body": "{\n   \"header\" : {\n      \"chargingContextId\" : \"sms-sc\",\n      \"requestId\" : \"1\",\n      \"subscriberId\" : \"123456789\"\n   },\n   \"serviceResult\" : {\n      \"responseCode\" : \"SUCCESS\",\n      \"chargingSessionId\": \"MySession_1_1690881616127_HAPPY\"\n   },\n   \"serviceInformation\" : {\n      \"any\" : {}\n   },\n   \"quotaResult\" : {\n      \"responseCode\" : \"SUCCESS\",\n      \"ratingGroup\" : 200\n   }\n}\n",
+				"bodyFileName": "resp_sms_opFin-with-credit.json",
+				"headers": {
+					"Content-Type": "application/json"
+				}
+			},
+			"response": {
+				"status": 200,
+				"headers": {
+					"Content-Type": "application/json",
+					"Matched-Stub-Id": "f935e6e6-6058-4460-ab40-dd0fff97bef5",
+					"Matched-Stub-Name": "sms_opFin-with-credit"
+				},
+				"bodyAsBase64": "ewogICAiaGVhZGVyIiA6IHsKICAgICAgImNoYXJnaW5nQ29udGV4dElkIiA6ICJzbXMtc2MiLAogICAgICAicmVxdWVzdElkIiA6ICIxIiwKICAgICAgInN1YnNjcmliZXJJZCIgOiAiMTIzNDU2Nzg5IgogICB9LAogICAic2VydmljZVJlc3VsdCIgOiB7CiAgICAgICJyZXNwb25zZUNvZGUiIDogIlNVQ0NFU1MiLAogICAgICAiY2hhcmdpbmdTZXNzaW9uSWQiOiAiTXlTZXNzaW9uXzFfMTY5MDg4MTYxNjEyN19IQVBQWSIKICAgfSwKICAgInNlcnZpY2VJbmZvcm1hdGlvbiIgOiB7CiAgICAgICJhbnkiIDoge30KICAgfSwKICAgInF1b3RhUmVzdWx0IiA6IHsKICAgICAgInJlc3BvbnNlQ29kZSIgOiAiU1VDQ0VTUyIsCiAgICAgICJyYXRpbmdHcm91cCIgOiAyMDAKICAgfQp9Cg==",
+				"body": "{\n   \"header\" : {\n      \"chargingContextId\" : \"sms-sc\",\n      \"requestId\" : \"1\",\n      \"subscriberId\" : \"123456789\"\n   },\n   \"serviceResult\" : {\n      \"responseCode\" : \"SUCCESS\",\n      \"chargingSessionId\": \"MySession_1_1690881616127_HAPPY\"\n   },\n   \"serviceInformation\" : {\n      \"any\" : {}\n   },\n   \"quotaResult\" : {\n      \"responseCode\" : \"SUCCESS\",\n      \"ratingGroup\" : 200\n   }\n}\n"
+			},
+			"wasMatched": true,
+			"timing": {
+				"addedDelay": 0,
+				"processTime": 3,
+				"responseSendTime": 0,
+				"serveTime": 3,
+				"totalTime": 3
+			},
+			"stubMapping": {
+				"id": "f935e6e6-6058-4460-ab40-dd0fff97bef5",
+				"name": "sms_opFin-with-credit",
+				"request": {
+					"urlPathPattern": "/.*",
+					"method": "POST",
+					"headers": {
+						"X-RequestId": {
+							"equalTo": "1"
+						}
+					},
+					"bodyPatterns": [
+						{
+							"matchesJsonPath": "$.serviceRequest[?(@.operationType == 'opFinal' && @.serviceIdentifier == 'sms.restcomm.org') ]"
+						}
+					]
+				},
+				"response": {
+					"status": 200,
+					"bodyFileName": "resp_sms_opFin-with-credit.json",
+					"headers": {
+						"Content-Type": "application/json"
+					}
+				},
+				"uuid": "f935e6e6-6058-4460-ab40-dd0fff97bef5"
+			}
+		},
+		{
+			"id": "de051ad1-ae8f-44a9-88d2-e6554cba3a61",
+			"request": {
+				"url": "/ocs",
+				"absoluteUrl": "http://responder:8099/ocs",
+				"method": "POST",
+				"clientIp": "172.24.0.6",
+				"headers": {
+					"Host": "responder:8099",
+					"Accept-Encoding": "identity",
+					"Content-Length": "647",
+					"X-Key": "KafkaResourceAdaptor MySession_4_1690881616133_SUB_NOT_FOUND",
+					"Accept": "application/json",
+					"X-ChargingContextId": "sms-sc",
+					"X-RequestId": "3",
+					"X-SubscriberId": "123456789",
+					"Content-Type": "application/json",
+					"X-SessionId": "123456789"
+				},
+				"cookies": {
+				},
+				"browserProxyRequest": false,
+				"loggedDate": 1690881616530,
+				"bodyAsBase64": "eyJ0cmFmZmljVHlwZVJlcXVlc3QiOiB7InJvYW1pbmdQb3NpdGlvbiI6ICJWUExNTiIsICJzZXJ2aWNlU2NlbmFyaW8iOiAiTU8ifSwgImhlYWRlciI6IHsiY2hhcmdpbmdDb250ZXh0SWQiOiAic21zLXNjIiwgInN1YnNjcmliZXJJZCI6ICIxMjM0NTY3ODkiLCAicmVxdWVzdElkIjogIjMifSwgInNlcnZpY2VSZXF1ZXN0IjogeyJzZXJ2aWNlSWRlbnRpZmllciI6ICJzbXMucmVzdGNvbW0ub3JnIiwgImNoYXJnaW5nU2Vzc2lvbklkIjogIk15U2Vzc2lvbl80XzE2OTA4ODE2MTYxMzNfU1VCX05PVF9GT1VORCIsICJvcGVyYXRpb25UeXBlIjogIm9wRmlyc3QifSwgInNlcnZpY2VJbmZvcm1hdGlvbiI6IHsibXNjQWRkcmVzcyI6ICJtc2MiLCAic2VydmljZUtleSI6IDEsICJzdGFydFRpbWVTdGFtcCI6IDAsICJjYWxsaW5nTXNpc2RuIjogIjEyMzQiLCAib3JpZ2luYWxDYWxsZWRQYXJ0eSI6ICJjYWxsZWQiLCAidmxyQWRkcmVzcyI6ICJAaGVyZSIsICJsb2NhdGlvbkluZm9ybWF0aW9uIjogeyJtbmMiOiAxLCAibWNjIjogMSwgImNlbGxJZCI6IDEsICJsYWMiOiAxfSwgImltc2kiOiAic29tZW51bWJlciJ9LCAicXVvdGFSZXF1ZXN0IjogeyJyZXF1ZXN0ZWRVbml0cyI6IDksICJ1c2VkVW5pdHMiOiAwLCAicmF0aW5nR3JvdXAiOiAwfX0=",
+				"body": "{\"trafficTypeRequest\": {\"roamingPosition\": \"VPLMN\", \"serviceScenario\": \"MO\"}, \"header\": {\"chargingContextId\": \"sms-sc\", \"subscriberId\": \"123456789\", \"requestId\": \"3\"}, \"serviceRequest\": {\"serviceIdentifier\": \"sms.restcomm.org\", \"chargingSessionId\": \"MySession_4_1690881616133_SUB_NOT_FOUND\", \"operationType\": \"opFirst\"}, \"serviceInformation\": {\"mscAddress\": \"msc\", \"serviceKey\": 1, \"startTimeStamp\": 0, \"callingMsisdn\": \"1234\", \"originalCalledParty\": \"called\", \"vlrAddress\": \"@here\", \"locationInformation\": {\"mnc\": 1, \"mcc\": 1, \"cellId\": 1, \"lac\": 1}, \"imsi\": \"somenumber\"}, \"quotaRequest\": {\"requestedUnits\": 9, \"usedUnits\": 0, \"ratingGroup\": 0}}",
+				"protocol": "HTTP/1.1",
+				"scheme": "http",
+				"host": "responder",
+				"port": 8099,
+				"loggedDateString": "2023-08-01T09:20:16Z",
+				"queryParams": {
+				}
+			},
+			"responseDefinition": {
+				"status": 200,
+				"body": "{\n   \"header\" : {\n      \"chargingContextId\" : \"sms-sc\",\n      \"requestId\" : \"3\",\n      \"subscriberId\" : \"123456789\"\n   },\n   \"quotaResult\" : null,\n   \"serviceResult\" : {\n      \"chargingSessionId\": \"MySession_4_1690881616133_SUB_NOT_FOUND\",\n      \"responseCode\" : \"SUBSCRIBER_NOT_FOUND\"\n   }\n}",
+				"bodyFileName": "resp_sms_opFir-sub-not-found.json",
+				"headers": {
+					"Content-Type": "application/json"
+				}
+			},
+			"response": {
+				"status": 200,
+				"headers": {
+					"Content-Type": "application/json",
+					"Matched-Stub-Id": "dd12ff9e-a4d7-49c4-a543-2e7537e90e93",
+					"Matched-Stub-Name": "sms_opFir-sub-not-found"
+				},
+				"bodyAsBase64": "ewogICAiaGVhZGVyIiA6IHsKICAgICAgImNoYXJnaW5nQ29udGV4dElkIiA6ICJzbXMtc2MiLAogICAgICAicmVxdWVzdElkIiA6ICIzIiwKICAgICAgInN1YnNjcmliZXJJZCIgOiAiMTIzNDU2Nzg5IgogICB9LAogICAicXVvdGFSZXN1bHQiIDogbnVsbCwKICAgInNlcnZpY2VSZXN1bHQiIDogewogICAgICAiY2hhcmdpbmdTZXNzaW9uSWQiOiAiTXlTZXNzaW9uXzRfMTY5MDg4MTYxNjEzM19TVUJfTk9UX0ZPVU5EIiwKICAgICAgInJlc3BvbnNlQ29kZSIgOiAiU1VCU0NSSUJFUl9OT1RfRk9VTkQiCiAgIH0KfQ==",
+				"body": "{\n   \"header\" : {\n      \"chargingContextId\" : \"sms-sc\",\n      \"requestId\" : \"3\",\n      \"subscriberId\" : \"123456789\"\n   },\n   \"quotaResult\" : null,\n   \"serviceResult\" : {\n      \"chargingSessionId\": \"MySession_4_1690881616133_SUB_NOT_FOUND\",\n      \"responseCode\" : \"SUBSCRIBER_NOT_FOUND\"\n   }\n}"
+			},
+			"wasMatched": true,
+			"timing": {
+				"addedDelay": 0,
+				"processTime": 2,
+				"responseSendTime": 0,
+				"serveTime": 2,
+				"totalTime": 2
+			},
+			"stubMapping": {
+				"id": "dd12ff9e-a4d7-49c4-a543-2e7537e90e93",
+				"name": "sms_opFir-sub-not-found",
+				"request": {
+					"urlPathPattern": "/.*",
+					"method": "POST",
+					"headers": {
+						"X-RequestId": {
+							"equalTo": "3"
+						}
+					},
+					"bodyPatterns": [
+						{
+							"matchesJsonPath": "$.serviceRequest[?(@.operationType == 'opFirst' && @.serviceIdentifier == 'sms.restcomm.org')]"
+						}
+					]
+				},
+				"response": {
+					"status": 200,
+					"bodyFileName": "resp_sms_opFir-sub-not-found.json",
+					"headers": {
+						"Content-Type": "application/json"
+					}
+				},
+				"uuid": "dd12ff9e-a4d7-49c4-a543-2e7537e90e93"
+			}
+		},
+		{
+			"id": "f870df87-b938-4b63-9796-d2487caa8fcf",
+			"request": {
+				"url": "/ocs",
+				"absoluteUrl": "http://responder:8099/ocs",
+				"method": "POST",
+				"clientIp": "172.24.0.6",
+				"headers": {
+					"Host": "responder:8099",
+					"Accept-Encoding": "identity",
+					"Content-Length": "639",
+					"X-Key": "KafkaResourceAdaptor MySession_2_1690881616132_HAPPY",
+					"Accept": "application/json",
+					"X-ChargingContextId": "sms-sc",
+					"X-RequestId": "1",
+					"X-SubscriberId": "123456789",
+					"Content-Type": "application/json",
+					"X-SessionId": "123456789"
+				},
+				"cookies": {
+				},
+				"browserProxyRequest": false,
+				"loggedDate": 1690881616419,
+				"bodyAsBase64": "eyJ0cmFmZmljVHlwZVJlcXVlc3QiOiB7InJvYW1pbmdQb3NpdGlvbiI6ICJWUExNTiIsICJzZXJ2aWNlU2NlbmFyaW8iOiAiTU8ifSwgImhlYWRlciI6IHsiY2hhcmdpbmdDb250ZXh0SWQiOiAic21zLXNjIiwgInN1YnNjcmliZXJJZCI6ICIxMjM0NTY3ODkiLCAicmVxdWVzdElkIjogIjEifSwgInNlcnZpY2VSZXF1ZXN0IjogeyJzZXJ2aWNlSWRlbnRpZmllciI6ICJzbXMucmVzdGNvbW0ub3JnIiwgImNoYXJnaW5nU2Vzc2lvbklkIjogIk15U2Vzc2lvbl8yXzE2OTA4ODE2MTYxMzJfSEFQUFkiLCAib3BlcmF0aW9uVHlwZSI6ICJvcEZpcnN0In0sICJzZXJ2aWNlSW5mb3JtYXRpb24iOiB7Im1zY0FkZHJlc3MiOiAibXNjIiwgInNlcnZpY2VLZXkiOiAxLCAic3RhcnRUaW1lU3RhbXAiOiAwLCAiY2FsbGluZ01zaXNkbiI6ICIxMjM0IiwgIm9yaWdpbmFsQ2FsbGVkUGFydHkiOiAiY2FsbGVkIiwgInZsckFkZHJlc3MiOiAiQGhlcmUiLCAibG9jYXRpb25JbmZvcm1hdGlvbiI6IHsibW5jIjogMSwgIm1jYyI6IDEsICJjZWxsSWQiOiAxLCAibGFjIjogMX0sICJpbXNpIjogInNvbWVudW1iZXIifSwgInF1b3RhUmVxdWVzdCI6IHsicmVxdWVzdGVkVW5pdHMiOiA5LCAidXNlZFVuaXRzIjogMCwgInJhdGluZ0dyb3VwIjogMH19",
+				"body": "{\"trafficTypeRequest\": {\"roamingPosition\": \"VPLMN\", \"serviceScenario\": \"MO\"}, \"header\": {\"chargingContextId\": \"sms-sc\", \"subscriberId\": \"123456789\", \"requestId\": \"1\"}, \"serviceRequest\": {\"serviceIdentifier\": \"sms.restcomm.org\", \"chargingSessionId\": \"MySession_2_1690881616132_HAPPY\", \"operationType\": \"opFirst\"}, \"serviceInformation\": {\"mscAddress\": \"msc\", \"serviceKey\": 1, \"startTimeStamp\": 0, \"callingMsisdn\": \"1234\", \"originalCalledParty\": \"called\", \"vlrAddress\": \"@here\", \"locationInformation\": {\"mnc\": 1, \"mcc\": 1, \"cellId\": 1, \"lac\": 1}, \"imsi\": \"somenumber\"}, \"quotaRequest\": {\"requestedUnits\": 9, \"usedUnits\": 0, \"ratingGroup\": 0}}",
+				"protocol": "HTTP/1.1",
+				"scheme": "http",
+				"host": "responder",
+				"port": 8099,
+				"loggedDateString": "2023-08-01T09:20:16Z",
+				"queryParams": {
+				}
+			},
+			"responseDefinition": {
+				"status": 200,
+				"body": "{\n    \"header\": {\n      \"chargingContextId\" : \"sms-sc\",\n      \"requestId\" : \"1\",\n      \"subscriberId\" : \"123456789\"\n    },\n    \"serviceResult\": {\n        \"chargingSessionId\": \"MySession_2_1690881616132_HAPPY\",\n        \"responseCode\": \"SUCCESS\"\n    },\n    \"serviceInformation\": {\n        \"any\": {}\n    },\n    \"quotaResult\": {\n        \"responseCode\": \"SUCCESS\",\n        \"grantedUnits\": 1000000,\n        \"ratingGroup\": 200,\n        \"validityTime\": 3600\n    }\n}\n\n",
+				"bodyFileName": "resp_sms_opFir-with-credit.json",
+				"headers": {
+					"Content-Type": "application/json"
+				}
+			},
+			"response": {
+				"status": 200,
+				"headers": {
+					"Content-Type": "application/json",
+					"Matched-Stub-Id": "04035e4d-c28e-45bf-95d7-47bd8a125c75",
+					"Matched-Stub-Name": "sms_opFir-with-credit"
+				},
+				"bodyAsBase64": "ewogICAgImhlYWRlciI6IHsKICAgICAgImNoYXJnaW5nQ29udGV4dElkIiA6ICJzbXMtc2MiLAogICAgICAicmVxdWVzdElkIiA6ICIxIiwKICAgICAgInN1YnNjcmliZXJJZCIgOiAiMTIzNDU2Nzg5IgogICAgfSwKICAgICJzZXJ2aWNlUmVzdWx0IjogewogICAgICAgICJjaGFyZ2luZ1Nlc3Npb25JZCI6ICJNeVNlc3Npb25fMl8xNjkwODgxNjE2MTMyX0hBUFBZIiwKICAgICAgICAicmVzcG9uc2VDb2RlIjogIlNVQ0NFU1MiCiAgICB9LAogICAgInNlcnZpY2VJbmZvcm1hdGlvbiI6IHsKICAgICAgICAiYW55Ijoge30KICAgIH0sCiAgICAicXVvdGFSZXN1bHQiOiB7CiAgICAgICAgInJlc3BvbnNlQ29kZSI6ICJTVUNDRVNTIiwKICAgICAgICAiZ3JhbnRlZFVuaXRzIjogMTAwMDAwMCwKICAgICAgICAicmF0aW5nR3JvdXAiOiAyMDAsCiAgICAgICAgInZhbGlkaXR5VGltZSI6IDM2MDAKICAgIH0KfQoK",
+				"body": "{\n    \"header\": {\n      \"chargingContextId\" : \"sms-sc\",\n      \"requestId\" : \"1\",\n      \"subscriberId\" : \"123456789\"\n    },\n    \"serviceResult\": {\n        \"chargingSessionId\": \"MySession_2_1690881616132_HAPPY\",\n        \"responseCode\": \"SUCCESS\"\n    },\n    \"serviceInformation\": {\n        \"any\": {}\n    },\n    \"quotaResult\": {\n        \"responseCode\": \"SUCCESS\",\n        \"grantedUnits\": 1000000,\n        \"ratingGroup\": 200,\n        \"validityTime\": 3600\n    }\n}\n\n"
+			},
+			"wasMatched": true,
+			"timing": {
+				"addedDelay": 0,
+				"processTime": 1,
+				"responseSendTime": 0,
+				"serveTime": 1,
+				"totalTime": 1
+			},
+			"stubMapping": {
+				"id": "04035e4d-c28e-45bf-95d7-47bd8a125c75",
+				"name": "sms_opFir-with-credit",
+				"request": {
+					"urlPathPattern": "/.*",
+					"method": "POST",
+					"headers": {
+						"X-RequestId": {
+							"equalTo": "1"
+						}
+					},
+					"bodyPatterns": [
+						{
+							"matchesJsonPath": "$.serviceRequest[?(@.operationType == 'opFirst' && @.serviceIdentifier == 'sms.restcomm.org')]"
+						}
+					]
+				},
+				"response": {
+					"status": 200,
+					"bodyFileName": "resp_sms_opFir-with-credit.json",
+					"headers": {
+						"Content-Type": "application/json"
+					}
+				},
+				"uuid": "04035e4d-c28e-45bf-95d7-47bd8a125c75"
+			}
+		},
+		{
+			"id": "08d67f1c-2d30-44f7-9980-3bb485a217b2",
+			"request": {
+				"url": "/ocs",
+				"absoluteUrl": "http://responder:8099/ocs",
+				"method": "POST",
+				"clientIp": "172.24.0.6",
+				"headers": {
+					"Host": "responder:8099",
+					"Accept-Encoding": "identity",
+					"Content-Length": "643",
+					"X-Key": "KafkaResourceAdaptor MySession_3_1690881616133_NO_CREDIT",
+					"Accept": "application/json",
+					"X-ChargingContextId": "sms-sc",
+					"X-RequestId": "2",
+					"X-SubscriberId": "123456789",
+					"Content-Type": "application/json",
+					"X-SessionId": "123456789"
+				},
+				"cookies": {
+				},
+				"browserProxyRequest": false,
+				"loggedDate": 1690881616306,
+				"bodyAsBase64": "eyJ0cmFmZmljVHlwZVJlcXVlc3QiOiB7InJvYW1pbmdQb3NpdGlvbiI6ICJWUExNTiIsICJzZXJ2aWNlU2NlbmFyaW8iOiAiTU8ifSwgImhlYWRlciI6IHsiY2hhcmdpbmdDb250ZXh0SWQiOiAic21zLXNjIiwgInN1YnNjcmliZXJJZCI6ICIxMjM0NTY3ODkiLCAicmVxdWVzdElkIjogIjIifSwgInNlcnZpY2VSZXF1ZXN0IjogeyJzZXJ2aWNlSWRlbnRpZmllciI6ICJzbXMucmVzdGNvbW0ub3JnIiwgImNoYXJnaW5nU2Vzc2lvbklkIjogIk15U2Vzc2lvbl8zXzE2OTA4ODE2MTYxMzNfTk9fQ1JFRElUIiwgIm9wZXJhdGlvblR5cGUiOiAib3BGaXJzdCJ9LCAic2VydmljZUluZm9ybWF0aW9uIjogeyJtc2NBZGRyZXNzIjogIm1zYyIsICJzZXJ2aWNlS2V5IjogMSwgInN0YXJ0VGltZVN0YW1wIjogMCwgImNhbGxpbmdNc2lzZG4iOiAiMTIzNCIsICJvcmlnaW5hbENhbGxlZFBhcnR5IjogImNhbGxlZCIsICJ2bHJBZGRyZXNzIjogIkBoZXJlIiwgImxvY2F0aW9uSW5mb3JtYXRpb24iOiB7Im1uYyI6IDEsICJtY2MiOiAxLCAiY2VsbElkIjogMSwgImxhYyI6IDF9LCAiaW1zaSI6ICJzb21lbnVtYmVyIn0sICJxdW90YVJlcXVlc3QiOiB7InJlcXVlc3RlZFVuaXRzIjogOSwgInVzZWRVbml0cyI6IDAsICJyYXRpbmdHcm91cCI6IDB9fQ==",
+				"body": "{\"trafficTypeRequest\": {\"roamingPosition\": \"VPLMN\", \"serviceScenario\": \"MO\"}, \"header\": {\"chargingContextId\": \"sms-sc\", \"subscriberId\": \"123456789\", \"requestId\": \"2\"}, \"serviceRequest\": {\"serviceIdentifier\": \"sms.restcomm.org\", \"chargingSessionId\": \"MySession_3_1690881616133_NO_CREDIT\", \"operationType\": \"opFirst\"}, \"serviceInformation\": {\"mscAddress\": \"msc\", \"serviceKey\": 1, \"startTimeStamp\": 0, \"callingMsisdn\": \"1234\", \"originalCalledParty\": \"called\", \"vlrAddress\": \"@here\", \"locationInformation\": {\"mnc\": 1, \"mcc\": 1, \"cellId\": 1, \"lac\": 1}, \"imsi\": \"somenumber\"}, \"quotaRequest\": {\"requestedUnits\": 9, \"usedUnits\": 0, \"ratingGroup\": 0}}",
+				"protocol": "HTTP/1.1",
+				"scheme": "http",
+				"host": "responder",
+				"port": 8099,
+				"loggedDateString": "2023-08-01T09:20:16Z",
+				"queryParams": {
+				}
+			},
+			"responseDefinition": {
+				"status": 200,
+				"body": "{\n   \"header\" : {\n      \"chargingContextId\" : \"sms-sc\",\n      \"requestId\" : \"2\",\n      \"subscriberId\" : \"123456789\"\n   },\n   \"quotaResult\" : null,\n   \"serviceResult\" : {\n      \"chargingSessionId\": \"MySession_3_1690881616133_NO_CREDIT\",\n      \"responseCode\" : \"NO_CREDIT_AVAILABLE\"\n   }\n}",
+				"bodyFileName": "resp_sms_opFir-no-credit.json",
+				"headers": {
+					"Content-Type": "application/json"
+				}
+			},
+			"response": {
+				"status": 200,
+				"headers": {
+					"Content-Type": "application/json",
+					"Matched-Stub-Id": "8a0dbd0c-2315-47e4-97d8-ae5c41b606b8",
+					"Matched-Stub-Name": "sms_opFir-no-credit"
+				},
+				"bodyAsBase64": "ewogICAiaGVhZGVyIiA6IHsKICAgICAgImNoYXJnaW5nQ29udGV4dElkIiA6ICJzbXMtc2MiLAogICAgICAicmVxdWVzdElkIiA6ICIyIiwKICAgICAgInN1YnNjcmliZXJJZCIgOiAiMTIzNDU2Nzg5IgogICB9LAogICAicXVvdGFSZXN1bHQiIDogbnVsbCwKICAgInNlcnZpY2VSZXN1bHQiIDogewogICAgICAiY2hhcmdpbmdTZXNzaW9uSWQiOiAiTXlTZXNzaW9uXzNfMTY5MDg4MTYxNjEzM19OT19DUkVESVQiLAogICAgICAicmVzcG9uc2VDb2RlIiA6ICJOT19DUkVESVRfQVZBSUxBQkxFIgogICB9Cn0=",
+				"body": "{\n   \"header\" : {\n      \"chargingContextId\" : \"sms-sc\",\n      \"requestId\" : \"2\",\n      \"subscriberId\" : \"123456789\"\n   },\n   \"quotaResult\" : null,\n   \"serviceResult\" : {\n      \"chargingSessionId\": \"MySession_3_1690881616133_NO_CREDIT\",\n      \"responseCode\" : \"NO_CREDIT_AVAILABLE\"\n   }\n}"
+			},
+			"wasMatched": true,
+			"timing": {
+				"addedDelay": 0,
+				"processTime": 1,
+				"responseSendTime": 0,
+				"serveTime": 1,
+				"totalTime": 1
+			},
+			"stubMapping": {
+				"id": "8a0dbd0c-2315-47e4-97d8-ae5c41b606b8",
+				"name": "sms_opFir-no-credit",
+				"request": {
+					"urlPathPattern": "/.*",
+					"method": "POST",
+					"headers": {
+						"X-RequestId": {
+							"equalTo": "2"
+						}
+					},
+					"bodyPatterns": [
+						{
+							"matchesJsonPath": "$.serviceRequest[?(@.operationType == 'opFirst' && @.serviceIdentifier == 'sms.restcomm.org')]"
+						}
+					]
+				},
+				"response": {
+					"status": 200,
+					"bodyFileName": "resp_sms_opFir-no-credit.json",
+					"headers": {
+						"Content-Type": "application/json"
+					}
+				},
+				"uuid": "8a0dbd0c-2315-47e4-97d8-ae5c41b606b8"
+			}
+		},
+		{
+			"id": "fd18f129-eeef-4642-a223-b4055def02af",
+			"request": {
+				"url": "/ocs",
+				"absoluteUrl": "http://responder:8099/ocs",
+				"method": "POST",
+				"clientIp": "172.24.0.6",
+				"headers": {
+					"Host": "responder:8099",
+					"Accept-Encoding": "identity",
+					"Content-Length": "641",
+					"X-Key": "KafkaResourceAdaptor MySession_5_1690881616134_TIMEOUT",
+					"Accept": "application/json",
+					"X-ChargingContextId": "sms-sc",
+					"X-RequestId": "4",
+					"X-SubscriberId": "123456789",
+					"Content-Type": "application/json",
+					"X-SessionId": "123456789"
+				},
+				"cookies": {
+				},
+				"browserProxyRequest": false,
+				"loggedDate": 1690881616300,
+				"bodyAsBase64": "eyJ0cmFmZmljVHlwZVJlcXVlc3QiOiB7InJvYW1pbmdQb3NpdGlvbiI6ICJWUExNTiIsICJzZXJ2aWNlU2NlbmFyaW8iOiAiTU8ifSwgImhlYWRlciI6IHsiY2hhcmdpbmdDb250ZXh0SWQiOiAic21zLXNjIiwgInN1YnNjcmliZXJJZCI6ICIxMjM0NTY3ODkiLCAicmVxdWVzdElkIjogIjQifSwgInNlcnZpY2VSZXF1ZXN0IjogeyJzZXJ2aWNlSWRlbnRpZmllciI6ICJzbXMucmVzdGNvbW0ub3JnIiwgImNoYXJnaW5nU2Vzc2lvbklkIjogIk15U2Vzc2lvbl81XzE2OTA4ODE2MTYxMzRfVElNRU9VVCIsICJvcGVyYXRpb25UeXBlIjogIm9wRmlyc3QifSwgInNlcnZpY2VJbmZvcm1hdGlvbiI6IHsibXNjQWRkcmVzcyI6ICJtc2MiLCAic2VydmljZUtleSI6IDEsICJzdGFydFRpbWVTdGFtcCI6IDAsICJjYWxsaW5nTXNpc2RuIjogIjEyMzQiLCAib3JpZ2luYWxDYWxsZWRQYXJ0eSI6ICJjYWxsZWQiLCAidmxyQWRkcmVzcyI6ICJAaGVyZSIsICJsb2NhdGlvbkluZm9ybWF0aW9uIjogeyJtbmMiOiAxLCAibWNjIjogMSwgImNlbGxJZCI6IDEsICJsYWMiOiAxfSwgImltc2kiOiAic29tZW51bWJlciJ9LCAicXVvdGFSZXF1ZXN0IjogeyJyZXF1ZXN0ZWRVbml0cyI6IDksICJ1c2VkVW5pdHMiOiAwLCAicmF0aW5nR3JvdXAiOiAwfX0=",
+				"body": "{\"trafficTypeRequest\": {\"roamingPosition\": \"VPLMN\", \"serviceScenario\": \"MO\"}, \"header\": {\"chargingContextId\": \"sms-sc\", \"subscriberId\": \"123456789\", \"requestId\": \"4\"}, \"serviceRequest\": {\"serviceIdentifier\": \"sms.restcomm.org\", \"chargingSessionId\": \"MySession_5_1690881616134_TIMEOUT\", \"operationType\": \"opFirst\"}, \"serviceInformation\": {\"mscAddress\": \"msc\", \"serviceKey\": 1, \"startTimeStamp\": 0, \"callingMsisdn\": \"1234\", \"originalCalledParty\": \"called\", \"vlrAddress\": \"@here\", \"locationInformation\": {\"mnc\": 1, \"mcc\": 1, \"cellId\": 1, \"lac\": 1}, \"imsi\": \"somenumber\"}, \"quotaRequest\": {\"requestedUnits\": 9, \"usedUnits\": 0, \"ratingGroup\": 0}}",
+				"protocol": "HTTP/1.1",
+				"scheme": "http",
+				"host": "responder",
+				"port": 8099,
+				"loggedDateString": "2023-08-01T09:20:16Z",
+				"queryParams": {
+				}
+			},
+			"responseDefinition": {
+				"status": 404
+			},
+			"response": {
+				"status": 404,
+				"headers": {
+					"Matched-Stub-Id": "1cf3ec7b-b933-41ff-af7c-1120d3bda669",
+					"Matched-Stub-Name": "sms_opFirst-timeout"
+				},
+				"bodyAsBase64": "",
+				"body": ""
+			},
+			"wasMatched": true,
+			"timing": {
+				"addedDelay": 0,
+				"processTime": 2,
+				"responseSendTime": 0,
+				"serveTime": 2,
+				"totalTime": 2
+			},
+			"stubMapping": {
+				"id": "1cf3ec7b-b933-41ff-af7c-1120d3bda669",
+				"name": "sms_opFirst-timeout",
+				"request": {
+					"urlPathPattern": "/.*",
+					"method": "POST",
+					"headers": {
+						"X-RequestId": {
+							"equalTo": "4"
+						}
+					},
+					"bodyPatterns": [
+						{
+							"matchesJsonPath": "$.serviceRequest[?(@.operationType == 'opFirst' && @.serviceIdentifier == 'sms.restcomm.org')]"
+						}
+					]
+				},
+				"response": {
+					"status": 404
+				},
+				"uuid": "1cf3ec7b-b933-41ff-af7c-1120d3bda669"
+			}
+		},
+		{
+			"id": "0ae9b562-0474-48aa-9cd5-5af9de2b4056",
+			"request": {
+				"url": "/ocs",
+				"absoluteUrl": "http://responder:8099/ocs",
+				"method": "POST",
+				"clientIp": "172.24.0.6",
+				"headers": {
+					"Host": "responder:8099",
+					"Accept-Encoding": "identity",
+					"Content-Length": "639",
+					"X-Key": "KafkaResourceAdaptor MySession_1_1690881616127_HAPPY",
+					"Accept": "application/json",
+					"X-ChargingContextId": "sms-sc",
+					"X-RequestId": "1",
+					"X-SubscriberId": "123456789",
+					"Content-Type": "application/json",
+					"X-SessionId": "123456789"
+				},
+				"cookies": {
+				},
+				"browserProxyRequest": false,
+				"loggedDate": 1690881616144,
+				"bodyAsBase64": "eyJ0cmFmZmljVHlwZVJlcXVlc3QiOiB7InJvYW1pbmdQb3NpdGlvbiI6ICJWUExNTiIsICJzZXJ2aWNlU2NlbmFyaW8iOiAiTU8ifSwgImhlYWRlciI6IHsiY2hhcmdpbmdDb250ZXh0SWQiOiAic21zLXNjIiwgInN1YnNjcmliZXJJZCI6ICIxMjM0NTY3ODkiLCAicmVxdWVzdElkIjogIjEifSwgInNlcnZpY2VSZXF1ZXN0IjogeyJzZXJ2aWNlSWRlbnRpZmllciI6ICJzbXMucmVzdGNvbW0ub3JnIiwgImNoYXJnaW5nU2Vzc2lvbklkIjogIk15U2Vzc2lvbl8xXzE2OTA4ODE2MTYxMjdfSEFQUFkiLCAib3BlcmF0aW9uVHlwZSI6ICJvcEZpcnN0In0sICJzZXJ2aWNlSW5mb3JtYXRpb24iOiB7Im1zY0FkZHJlc3MiOiAibXNjIiwgInNlcnZpY2VLZXkiOiAxLCAic3RhcnRUaW1lU3RhbXAiOiAwLCAiY2FsbGluZ01zaXNkbiI6ICIxMjM0IiwgIm9yaWdpbmFsQ2FsbGVkUGFydHkiOiAiY2FsbGVkIiwgInZsckFkZHJlc3MiOiAiQGhlcmUiLCAibG9jYXRpb25JbmZvcm1hdGlvbiI6IHsibW5jIjogMSwgIm1jYyI6IDEsICJjZWxsSWQiOiAxLCAibGFjIjogMX0sICJpbXNpIjogInNvbWVudW1iZXIifSwgInF1b3RhUmVxdWVzdCI6IHsicmVxdWVzdGVkVW5pdHMiOiA5LCAidXNlZFVuaXRzIjogMCwgInJhdGluZ0dyb3VwIjogMH19",
+				"body": "{\"trafficTypeRequest\": {\"roamingPosition\": \"VPLMN\", \"serviceScenario\": \"MO\"}, \"header\": {\"chargingContextId\": \"sms-sc\", \"subscriberId\": \"123456789\", \"requestId\": \"1\"}, \"serviceRequest\": {\"serviceIdentifier\": \"sms.restcomm.org\", \"chargingSessionId\": \"MySession_1_1690881616127_HAPPY\", \"operationType\": \"opFirst\"}, \"serviceInformation\": {\"mscAddress\": \"msc\", \"serviceKey\": 1, \"startTimeStamp\": 0, \"callingMsisdn\": \"1234\", \"originalCalledParty\": \"called\", \"vlrAddress\": \"@here\", \"locationInformation\": {\"mnc\": 1, \"mcc\": 1, \"cellId\": 1, \"lac\": 1}, \"imsi\": \"somenumber\"}, \"quotaRequest\": {\"requestedUnits\": 9, \"usedUnits\": 0, \"ratingGroup\": 0}}",
+				"protocol": "HTTP/1.1",
+				"scheme": "http",
+				"host": "responder",
+				"port": 8099,
+				"loggedDateString": "2023-08-01T09:20:16Z",
+                "queryParams": {
+					"q1": {
+						"key": "q1",
+						"values": [
+							"v1" ,
+                            "v1"
+						]
+					}
+				}
+			},
+			"responseDefinition": {
+				"status": 200,
+				"body": "{\n    \"header\": {\n      \"chargingContextId\" : \"sms-sc\",\n      \"requestId\" : \"1\",\n      \"subscriberId\" : \"123456789\"\n    },\n    \"serviceResult\": {\n        \"chargingSessionId\": \"MySession_1_1690881616127_HAPPY\",\n        \"responseCode\": \"SUCCESS\"\n    },\n    \"serviceInformation\": {\n        \"any\": {}\n    },\n    \"quotaResult\": {\n        \"responseCode\": \"SUCCESS\",\n        \"grantedUnits\": 1000000,\n        \"ratingGroup\": 200,\n        \"validityTime\": 3600\n    }\n}\n\n",
+				"bodyFileName": "resp_sms_opFir-with-credit.json",
+				"headers": {
+					"Content-Type": "application/json"
+				}
+			},
+			"response": {
+				"status": 200,
+				"headers": {
+					"Content-Type": "application/json",
+					"Matched-Stub-Id": "04035e4d-c28e-45bf-95d7-47bd8a125c75",
+					"Matched-Stub-Name": "sms_opFir-with-credit"
+				},
+				"bodyAsBase64": "ewogICAgImhlYWRlciI6IHsKICAgICAgImNoYXJnaW5nQ29udGV4dElkIiA6ICJzbXMtc2MiLAogICAgICAicmVxdWVzdElkIiA6ICIxIiwKICAgICAgInN1YnNjcmliZXJJZCIgOiAiMTIzNDU2Nzg5IgogICAgfSwKICAgICJzZXJ2aWNlUmVzdWx0IjogewogICAgICAgICJjaGFyZ2luZ1Nlc3Npb25JZCI6ICJNeVNlc3Npb25fMV8xNjkwODgxNjE2MTI3X0hBUFBZIiwKICAgICAgICAicmVzcG9uc2VDb2RlIjogIlNVQ0NFU1MiCiAgICB9LAogICAgInNlcnZpY2VJbmZvcm1hdGlvbiI6IHsKICAgICAgICAiYW55Ijoge30KICAgIH0sCiAgICAicXVvdGFSZXN1bHQiOiB7CiAgICAgICAgInJlc3BvbnNlQ29kZSI6ICJTVUNDRVNTIiwKICAgICAgICAiZ3JhbnRlZFVuaXRzIjogMTAwMDAwMCwKICAgICAgICAicmF0aW5nR3JvdXAiOiAyMDAsCiAgICAgICAgInZhbGlkaXR5VGltZSI6IDM2MDAKICAgIH0KfQoK",
+				"body": "{\n    \"header\": {\n      \"chargingContextId\" : \"sms-sc\",\n      \"requestId\" : \"1\",\n      \"subscriberId\" : \"123456789\"\n    },\n    \"serviceResult\": {\n        \"chargingSessionId\": \"MySession_1_1690881616127_HAPPY\",\n        \"responseCode\": \"SUCCESS\"\n    },\n    \"serviceInformation\": {\n        \"any\": {}\n    },\n    \"quotaResult\": {\n        \"responseCode\": \"SUCCESS\",\n        \"grantedUnits\": 1000000,\n        \"ratingGroup\": 200,\n        \"validityTime\": 3600\n    }\n}\n\n"
+			},
+			"wasMatched": true,
+			"timing": {
+				"addedDelay": 0,
+				"processTime": 3,
+				"responseSendTime": 0,
+				"serveTime": 3,
+				"totalTime": 3
+			},
+			"stubMapping": {
+				"id": "04035e4d-c28e-45bf-95d7-47bd8a125c75",
+				"name": "sms_opFir-with-credit",
+				"request": {
+					"urlPathPattern": "/.*",
+					"method": "POST",
+					"headers": {
+						"X-RequestId": {
+							"equalTo": "1"
+						}
+					},
+					"bodyPatterns": [
+						{
+							"matchesJsonPath": "$.serviceRequest[?(@.operationType == 'opFirst' && @.serviceIdentifier == 'sms.restcomm.org')]"
+						}
+					]
+				},
+				"response": {
+					"status": 200,
+					"bodyFileName": "resp_sms_opFir-with-credit.json",
+					"headers": {
+						"Content-Type": "application/json"
+					}
+				},
+				"uuid": "04035e4d-c28e-45bf-95d7-47bd8a125c75"
+			}
+		}
+	],
+	"meta": {
+		"total": 7
+	},
+	"requestJournalDisabled": false
 }
